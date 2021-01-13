@@ -34,9 +34,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity top is
     Port (       clk : in std_logic; 
                  serial_in : in std_logic;  
-                 data_strobe : out std_logic;
+                -- data_strobe : out std_logic;
                  seg : out std_logic_vector(6 downto 0);
                  an  : out std_logic_vector(3 downto 0);
+                 rst: in std_logic;
+                 luz: out std_logic;
+                 botoi: in STD_LOGIC;
+                 luz2: out STD_LOGIC;
                  imp: out STD_LOGIC_VECTOR (6 downto 0));
 end top;
 
@@ -55,6 +59,15 @@ component kcuart_rx is
             clk : in std_logic);
 end component;
 
+component EM is
+    Port ( clk: in STD_LOGIC;
+           data_strobe : in STD_LOGIC;
+           rst: in STD_LOGIC;
+           luz2: out STD_LOGIC;
+           botoi: in STD_LOGIC;
+           luz : out STD_LOGIC);
+end component;
+
 component display7 is
     Port ( signal_in : in STD_LOGIC_VECTOR (7 downto 0);
            an_in : in STD_LOGIC_VECTOR (3 downto 0);
@@ -65,7 +78,7 @@ end component;
 signal data: STD_LOGIC_VECTOR (7 downto 0);
 signal clk_16_x: STD_LOGIC;
 signal anodo_test: STD_LOGIC_VECTOR (3 downto 0) := "1111";
-
+signal cosas: STD_LOGIC;
 begin
 
 imp <= "ZZZZZZZ";
@@ -77,7 +90,7 @@ U1: FrekuentziaZatitzailea port map(
 U2: kcuart_rx port map(
             serial_in=>serial_in,
             data_out=>data,
-            data_strobe=>data_strobe,
+            data_strobe=>cosas,
             en_16_x_baud=>clk_16_x,
             clk=>clk);
 
@@ -86,5 +99,13 @@ U3: display7 port map(
            an_in=>anodo_test,
            an_out=>an,
            seg_out=>seg);
+           
+U4: EM port map(
+           clk=>clk,
+           data_strobe=>cosas,
+           rst=>rst,
+           luz=>luz,
+           botoi=>botoi,
+           luz2=>luz2);
 
 end Behavioral;

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/Puerto_Serie.xpr">
+<Project Version="7" Minor="20" Path="C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="186a567cf2914d8a89ee3b57be2e3b5c"/>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Fri Dec 18 18:00:44 2020'>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Thu Jan  7 16:57:04 2021'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="1909853" description="" />
-  <keyValuePair key="date_generated" value="Fri Dec 18 18:00:44 2020" description="" />
+  <keyValuePair key="date_generated" value="Thu Jan  7 16:57:04 2021" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2017.2 (64-bit)" description="" />
   <keyValuePair key="project_id" value="186a567cf2914d8a89ee3b57be2e3b5c" description="" />
-  <keyValuePair key="project_iteration" value="7" description="" />
-  <keyValuePair key="random_id" value="070dba14-d380-4458-af00-3a3772cfb90b" description="" />
-  <keyValuePair key="registration_id" value="212041415_0_0_540" description="" />
+  <keyValuePair key="project_iteration" value="8" description="" />
+  <keyValuePair key="random_id" value="dcc371fb72105a6bbc15f0dd11f7065a" description="" />
+  <keyValuePair key="registration_id" value="212043561_0_0_609" description="" />
   <keyValuePair key="route_design" value="TRUE" description="" />
   <keyValuePair key="target_device" value="xc7a35t" description="" />
   <keyValuePair key="target_family" value="artix7" description="" />
@@ -19,11 +19,11 @@
   <keyValuePair key="tool_flow" value="Vivado" description="" />
  </section>
  <section name="user_environment" level="1" order="2" description="">
-  <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz" description="" />
-  <keyValuePair key="cpu_speed" value="1800 MHz" description="" />
+  <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz" description="" />
+  <keyValuePair key="cpu_speed" value="2904 MHz" description="" />
   <keyValuePair key="os_name" value="Microsoft Windows 8 or later , 64-bit" description="" />
   <keyValuePair key="os_release" value="major release  (build 9200)" description="" />
-  <keyValuePair key="system_ram" value="8.000 GB" description="" />
+  <keyValuePair key="system_ram" value="12.000 GB" description="" />
   <keyValuePair key="total_processors" value="1" description="" />
  </section>
  <section name="report_drc" level="1" order="3" description="">
@@ -120,7 +120,7 @@
    <keyValuePair key="output_load" value="5.000000" description="" />
    <keyValuePair key="output_toggle" value="12.500000" description="" />
    <keyValuePair key="package" value="cpg236" description="" />
-   <keyValuePair key="pct_clock_constrained" value="0.000000" description="" />
+   <keyValuePair key="pct_clock_constrained" value="2.000000" description="" />
    <keyValuePair key="pct_inputs_defined" value="0" description="" />
    <keyValuePair key="platform" value="nt64" description="" />
    <keyValuePair key="process" value="typical" description="" />
@@ -486,10 +486,10 @@
    <keyValuePair key="-verilog_define" value="default::[not_specified]" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
-   <keyValuePair key="elapsed" value="00:00:26s" description="" />
+   <keyValuePair key="elapsed" value="00:00:47s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
-   <keyValuePair key="memory_gain" value="406.246MB" description="" />
-   <keyValuePair key="memory_peak" value="696.531MB" description="" />
+   <keyValuePair key="memory_gain" value="404.066MB" description="" />
+   <keyValuePair key="memory_peak" value="695.500MB" description="" />
   </section>
  </section>
  <section name="unisim_transformation" level="1" order="9" description="">
@@ -533,20 +533,23 @@
    <keyValuePair key="addsources" value="8" description="" />
    <keyValuePair key="autoconnecttarget" value="2" description="" />
    <keyValuePair key="editdelete" value="3" description="" />
-   <keyValuePair key="launchprogramfpga" value="9" description="" />
+   <keyValuePair key="launchprogramfpga" value="10" description="" />
    <keyValuePair key="newproject" value="1" description="" />
    <keyValuePair key="openhardwaremanager" value="1" description="" />
-   <keyValuePair key="runbitgen" value="11" description="" />
+   <keyValuePair key="openproject" value="2" description="" />
+   <keyValuePair key="runbitgen" value="12" description="" />
    <keyValuePair key="runimplementation" value="6" description="" />
    <keyValuePair key="runschematic" value="2" description="" />
    <keyValuePair key="runsynthesis" value="1" description="" />
    <keyValuePair key="showview" value="4" description="" />
    <keyValuePair key="toggleviewnavigator" value="2" description="" />
+   <keyValuePair key="toolssettings" value="2" description="" />
+   <keyValuePair key="toolstemplates" value="1" description="" />
    <keyValuePair key="ui.views.c.h.e" value="1" description="" />
    <keyValuePair key="zoomout" value="11" description="" />
   </section>
   <section name="other_data" level="2" order="2" description="">
-   <keyValuePair key="guimode" value="3" description="" />
+   <keyValuePair key="guimode" value="6" description="" />
   </section>
   <section name="project_data" level="2" order="3" description="">
    <keyValuePair key="constraintsetcount" value="1" description="" />

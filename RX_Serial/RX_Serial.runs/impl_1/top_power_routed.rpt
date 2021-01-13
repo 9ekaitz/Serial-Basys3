@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Fri Dec 25 22:55:42 2020
-| Host             : DESKTOP-6C35MAJ running 64-bit major release  (build 9200)
+| Date             : Tue Jan 12 18:04:46 2021
+| Host             : LAPTOP-0NMBGPLN running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
 | Device           : xc7a35tcpg236-1
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.259 |
-| Dynamic (W)              | 0.187 |
+| Total On-Chip Power (W)  | 0.271 |
+| Dynamic (W)              | 0.199 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
-| Max Ambient (C)          | 83.7  |
-| Junction Temperature (C) | 26.3  |
+| Max Ambient (C)          | 83.6  |
+| Junction Temperature (C) | 26.4  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,16 +49,16 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic             |     0.108 |       95 |       --- |             --- |
-|   LUT as Logic          |     0.097 |       19 |     20800 |            0.09 |
+| Slice Logic             |     0.112 |      102 |       --- |             --- |
+|   LUT as Logic          |     0.101 |       19 |     20800 |            0.09 |
 |   BUFG                  |     0.006 |        1 |        32 |            3.13 |
-|   Register              |     0.005 |       35 |     41600 |            0.08 |
+|   Register              |     0.005 |       38 |     41600 |            0.09 |
 |   LUT as Shift Register |    <0.001 |       12 |      9600 |            0.13 |
-|   Others                |     0.000 |       14 |       --- |             --- |
-| Signals                 |     0.070 |       53 |       --- |             --- |
-| I/O                     |     0.009 |       21 |       106 |           19.81 |
+|   Others                |     0.000 |       18 |       --- |             --- |
+| Signals                 |     0.078 |       58 |       --- |             --- |
+| I/O                     |     0.008 |       24 |       106 |           22.64 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.259 |          |           |                 |
+| Total                   |     0.271 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,7 +68,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.196 |       0.186 |      0.010 |
+| Vccint    |       1.000 |     0.208 |       0.199 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -135,9 +135,10 @@ Table of Contents
 +------+-----------+
 | Name | Power (W) |
 +------+-----------+
-| top  |     0.187 |
-|   U1 |     0.140 |
-|   U2 |     0.016 |
+| top  |     0.199 |
+|   U1 |     0.151 |
+|   U2 |     0.015 |
+|   U4 |    <0.001 |
 +------+-----------+
 
 

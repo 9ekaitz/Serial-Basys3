@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Jan 12 18:09:22 2021
+# Process ID: 12096
+# Current directory: C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Serial-Basys3-main/RX_Serial
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2576 C:\Users\iarambururo\OneDrive - Mondragon Unibertsitatea\.cosas de clase\2020-2021\2.curso\Sistemas programables\Vivado\Serial-Basys3-main\RX_Serial\RX_Serial.xpr
+# Log file: C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Serial-Basys3-main/RX_Serial/vivado.log
+# Journal file: C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Serial-Basys3-main/RX_Serial\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Serial-Basys3-main/RX_Serial/RX_Serial.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Serial-Basys3-main/RX_Serial'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Serial-Basys3-main/RX_Serial/RX_Serial.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 12 18:09:53 2021...

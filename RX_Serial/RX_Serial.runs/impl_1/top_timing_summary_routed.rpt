@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Fri Dec 25 22:55:42 2020
-| Host         : DESKTOP-6C35MAJ running 64-bit major release  (build 9200)
+| Date         : Tue Jan 12 18:04:46 2021
+| Host         : LAPTOP-0NMBGPLN running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design       : top
 | Device       : 7a35t-cpg236
@@ -52,7 +52,9 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 54 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 56 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: U2/strobe_reg/Q (HIGH)
 
 
 2. checking constant_clock
@@ -67,14 +69,14 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 103 pins that are not constrained for maximum delay. (HIGH)
+ There are 109 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There is 1 input port with no input delay specified. (HIGH)
+ There are 3 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 

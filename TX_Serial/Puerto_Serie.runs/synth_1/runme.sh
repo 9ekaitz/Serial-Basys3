@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.runs/synth_1'
+HD_PWD='C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

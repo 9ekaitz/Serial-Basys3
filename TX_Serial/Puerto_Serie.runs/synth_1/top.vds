@@ -2,12 +2,12 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri Dec 18 17:59:08 2020
-# Process ID: 8972
-# Current directory: C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.runs/synth_1
+# Start of session at: Thu Jan  7 16:54:24 2021
+# Process ID: 12608
+# Current directory: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.runs/synth_1/top.vds
-# Journal file: C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.runs/synth_1\vivado.jou
+# Log file: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.runs/synth_1/top.vds
+# Journal file: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
 Command: synth_design -top top -part xc7a35tcpg236-1
@@ -15,90 +15,90 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2312 
+INFO: Helper process launched with PID 16164 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 378.230 ; gain = 81.188
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 377.203 ; gain = 79.012
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/top.vhd:44]
-INFO: [Synth 8-3491] module 'FrekuentziaZatitzailea' declared at 'C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/FrekuentziaZatitzailea.vhd:15' bound to instance 'U1' of component 'FrekuentziaZatitzailea' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/top.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'FrekuentziaZatitzailea' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/FrekuentziaZatitzailea.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'FrekuentziaZatitzailea' (1#1) [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/FrekuentziaZatitzailea.vhd:20]
-INFO: [Synth 8-3491] module 'kcuart_tx' declared at 'C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:13' bound to instance 'U2' of component 'kcuart_tx' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/top.vhd:71]
-INFO: [Synth 8-638] synthesizing module 'kcuart_tx' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/top.vhd:44]
+INFO: [Synth 8-3491] module 'FrekuentziaZatitzailea' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/FrekuentziaZatitzailea.vhd:15' bound to instance 'U1' of component 'FrekuentziaZatitzailea' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/top.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'FrekuentziaZatitzailea' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/FrekuentziaZatitzailea.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'FrekuentziaZatitzailea' (1#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/FrekuentziaZatitzailea.vhd:20]
+INFO: [Synth 8-3491] module 'kcuart_tx' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:13' bound to instance 'U2' of component 'kcuart_tx' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/top.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'kcuart_tx' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:25]
 	Parameter INIT bound to: 16'b1110010011111111 
-INFO: [Synth 8-113] binding component instance 'mux1_lut' to cell 'LUT4' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:84]
+INFO: [Synth 8-113] binding component instance 'mux1_lut' to cell 'LUT4' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:84]
 	Parameter INIT bound to: 16'b1110010011111111 
-INFO: [Synth 8-113] binding component instance 'mux2_lut' to cell 'LUT4' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:94]
+INFO: [Synth 8-113] binding component instance 'mux2_lut' to cell 'LUT4' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:94]
 	Parameter INIT bound to: 16'b1110010011111111 
-INFO: [Synth 8-113] binding component instance 'mux3_lut' to cell 'LUT4' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:104]
+INFO: [Synth 8-113] binding component instance 'mux3_lut' to cell 'LUT4' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:104]
 	Parameter INIT bound to: 16'b1110010011111111 
-INFO: [Synth 8-113] binding component instance 'mux4_lut' to cell 'LUT4' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:114]
-INFO: [Synth 8-113] binding component instance 'mux5_muxf5' to cell 'MUXF5' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:124]
-INFO: [Synth 8-113] binding component instance 'mux6_muxf5' to cell 'MUXF5' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:130]
-INFO: [Synth 8-113] binding component instance 'mux7_muxf6' to cell 'MUXF6' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:136]
+INFO: [Synth 8-113] binding component instance 'mux4_lut' to cell 'LUT4' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:114]
+INFO: [Synth 8-113] binding component instance 'mux5_muxf5' to cell 'MUXF5' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:124]
+INFO: [Synth 8-113] binding component instance 'mux6_muxf5' to cell 'MUXF5' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:130]
+INFO: [Synth 8-113] binding component instance 'mux7_muxf6' to cell 'MUXF6' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:136]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'pipeline_serial' to cell 'FDRS' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:144]
+INFO: [Synth 8-113] binding component instance 'pipeline_serial' to cell 'FDRS' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:144]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'register_bit' to cell 'FDRE' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:165]
+INFO: [Synth 8-113] binding component instance 'register_bit' to cell 'FDRE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:165]
 	Parameter INIT bound to: 4'b1000 
-INFO: [Synth 8-113] binding component instance 'count_lut' to cell 'LUT2' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:172]
-INFO: [Synth 8-113] binding component instance 'mask_and' to cell 'MULT_AND' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:180]
-INFO: [Synth 8-113] binding component instance 'count_muxcy' to cell 'MUXCY' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:188]
-INFO: [Synth 8-113] binding component instance 'count_xor' to cell 'XORCY' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:194]
+INFO: [Synth 8-113] binding component instance 'count_lut' to cell 'LUT2' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:172]
+INFO: [Synth 8-113] binding component instance 'mask_and' to cell 'MULT_AND' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:180]
+INFO: [Synth 8-113] binding component instance 'count_muxcy' to cell 'MUXCY' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:188]
+INFO: [Synth 8-113] binding component instance 'count_xor' to cell 'XORCY' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:194]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'register_bit' to cell 'FDRE' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:165]
+INFO: [Synth 8-113] binding component instance 'register_bit' to cell 'FDRE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:165]
 	Parameter INIT bound to: 4'b1000 
-INFO: [Synth 8-113] binding component instance 'count_lut' to cell 'LUT2' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:172]
-INFO: [Synth 8-113] binding component instance 'mask_and' to cell 'MULT_AND' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:180]
-INFO: [Synth 8-113] binding component instance 'count_muxcy' to cell 'MUXCY' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:204]
-INFO: [Synth 8-113] binding component instance 'count_xor' to cell 'XORCY' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:210]
+INFO: [Synth 8-113] binding component instance 'count_lut' to cell 'LUT2' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:172]
+INFO: [Synth 8-113] binding component instance 'mask_and' to cell 'MULT_AND' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:180]
+INFO: [Synth 8-113] binding component instance 'count_muxcy' to cell 'MUXCY' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:204]
+INFO: [Synth 8-113] binding component instance 'count_xor' to cell 'XORCY' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:210]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'register_bit' to cell 'FDRE' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:165]
+INFO: [Synth 8-113] binding component instance 'register_bit' to cell 'FDRE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:165]
 	Parameter INIT bound to: 4'b1000 
-INFO: [Synth 8-113] binding component instance 'count_lut' to cell 'LUT2' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:172]
-INFO: [Synth 8-113] binding component instance 'mask_and' to cell 'MULT_AND' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:180]
-INFO: [Synth 8-113] binding component instance 'count_muxcy' to cell 'MUXCY' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:204]
-INFO: [Synth 8-113] binding component instance 'count_xor' to cell 'XORCY' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:210]
+INFO: [Synth 8-113] binding component instance 'count_lut' to cell 'LUT2' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:172]
+INFO: [Synth 8-113] binding component instance 'mask_and' to cell 'MULT_AND' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:180]
+INFO: [Synth 8-113] binding component instance 'count_muxcy' to cell 'MUXCY' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:204]
+INFO: [Synth 8-113] binding component instance 'count_xor' to cell 'XORCY' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:210]
 	Parameter INIT bound to: 8'b00010000 
-INFO: [Synth 8-113] binding component instance 'ready_lut' to cell 'LUT3' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:221]
+INFO: [Synth 8-113] binding component instance 'ready_lut' to cell 'LUT3' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:221]
 	Parameter INIT bound to: 16'b0000000110010000 
-INFO: [Synth 8-113] binding component instance 'start_lut' to cell 'LUT4' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:232]
+INFO: [Synth 8-113] binding component instance 'start_lut' to cell 'LUT4' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:232]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'Tx_start_reg' to cell 'FDE' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:242]
+INFO: [Synth 8-113] binding component instance 'Tx_start_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:242]
 	Parameter INIT bound to: 16'b0001010101000000 
-INFO: [Synth 8-113] binding component instance 'run_lut' to cell 'LUT4' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:251]
+INFO: [Synth 8-113] binding component instance 'run_lut' to cell 'LUT4' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:251]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'Tx_run_reg' to cell 'FDE' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:261]
+INFO: [Synth 8-113] binding component instance 'Tx_run_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:261]
 	Parameter INIT bound to: 8'b10010100 
-INFO: [Synth 8-113] binding component instance 'hot_state_lut' to cell 'LUT3' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:269]
+INFO: [Synth 8-113] binding component instance 'hot_state_lut' to cell 'LUT3' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:269]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'hot_state_reg' to cell 'FDE' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:278]
+INFO: [Synth 8-113] binding component instance 'hot_state_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:278]
 	Parameter INIT bound to: 16'b0000000000000000 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'delay14_srl' to cell 'SRL16E' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:284]
+INFO: [Synth 8-113] binding component instance 'delay14_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:284]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'Tx_bit_reg' to cell 'FDE' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:297]
+INFO: [Synth 8-113] binding component instance 'Tx_bit_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:297]
 	Parameter INIT bound to: 16'b0000000110000000 
-INFO: [Synth 8-113] binding component instance 'stop_lut' to cell 'LUT4' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:305]
+INFO: [Synth 8-113] binding component instance 'stop_lut' to cell 'LUT4' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:305]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'Tx_stop_reg' to cell 'FDE' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:315]
+INFO: [Synth 8-113] binding component instance 'Tx_stop_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:315]
 	Parameter INIT bound to: 4'b1000 
-INFO: [Synth 8-113] binding component instance 'complete_lut' to cell 'LUT2' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:323]
+INFO: [Synth 8-113] binding component instance 'complete_lut' to cell 'LUT2' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:323]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'Tx_complete_reg' to cell 'FD' [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:331]
+INFO: [Synth 8-113] binding component instance 'Tx_complete_reg' to cell 'FD' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:331]
 WARNING: [Synth 8-2887] Directive 'init' on 'mux1_lut' is unsupported and ignored
 WARNING: [Synth 8-2887] Directive 'init' on 'mux2_lut' is unsupported and ignored
 WARNING: [Synth 8-2887] Directive 'init' on 'mux3_lut' is unsupported and ignored
@@ -112,10 +112,10 @@ WARNING: [Synth 8-2887] Directive 'init' on 'complete_lut' is unsupported and ig
 WARNING: [Synth 8-2887] Directive 'init' on '\count_width_loop[0].count_lut ' is unsupported and ignored
 WARNING: [Synth 8-2887] Directive 'init' on '\count_width_loop[1].count_lut ' is unsupported and ignored
 WARNING: [Synth 8-2887] Directive 'init' on '\count_width_loop[2].count_lut ' is unsupported and ignored
-INFO: [Synth 8-256] done synthesizing module 'kcuart_tx' (2#1) [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:25]
-INFO: [Synth 8-256] done synthesizing module 'top' (3#1) [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/sources_1/new/top.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'kcuart_tx' (2#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/transmisor.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'top' (3#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/sources_1/new/top.vhd:44]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 417.555 ; gain = 120.512
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 417.281 ; gain = 119.090
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -125,7 +125,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 417.555 ; gain = 120.512
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 417.281 ; gain = 119.090
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -134,9 +134,9 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/constrs_1/imports/Vivado/Basys3_Master.xdc]
-Finished Parsing XDC File [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/constrs_1/imports/Vivado/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.srcs/constrs_1/imports/Vivado/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/constrs_1/imports/Vivado/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/constrs_1/imports/Vivado/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.srcs/constrs_1/imports/Vivado/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
@@ -149,22 +149,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   MUXF5 => LUT3: 2 instances
   MUXF6 => LUT3: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 696.531 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 695.500 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "clk_16_x" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-2887] Directive 'init' on 'mux1_lut' is unsupported and ignored
@@ -181,7 +181,7 @@ WARNING: [Synth 8-2887] Directive 'init' on '\count_width_loop[0].count_lut ' is
 WARNING: [Synth 8-2887] Directive 'init' on '\count_width_loop[1].count_lut ' is unsupported and ignored
 WARNING: [Synth 8-2887] Directive 'init' on '\count_width_loop[2].count_lut ' is unsupported and ignored
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -233,7 +233,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "U1/clk_16_x" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -245,13 +245,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -263,7 +263,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -287,7 +287,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -300,7 +300,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -312,25 +312,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -376,11 +376,11 @@ Report Instance Areas:
 |3     |  U2     |kcuart_tx              |    37|
 +------+---------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 696.531 ; gain = 399.488
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 695.500 ; gain = 397.309
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 696.531 ; gain = 120.512
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 696.531 ; gain = 399.488
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 695.500 ; gain = 119.090
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 695.500 ; gain = 397.309
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -397,7 +397,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 59 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 697.387 ; gain = 407.102
-INFO: [Common 17-1381] The checkpoint 'C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Puerto_Serie/Puerto_Serie.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 697.387 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 18 17:59:39 2020...
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 696.359 ; gain = 405.930
+INFO: [Common 17-1381] The checkpoint 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TX_Serial/Puerto_Serie.runs/synth_1/top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 696.359 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  7 16:55:18 2021...
