@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Jan 13 13:20:07 2021
+# Process ID: 11244
+# Current directory: C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Serial-Basys3-main/TX_Serial
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1860 C:\Users\iarambururo\OneDrive - Mondragon Unibertsitatea\.cosas de clase\2020-2021\2.curso\Sistemas programables\Vivado\Serial-Basys3-main\TX_Serial\Puerto_Serie.xpr
+# Log file: C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Serial-Basys3-main/TX_Serial/vivado.log
+# Journal file: C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Serial-Basys3-main/TX_Serial\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Serial-Basys3-main/TX_Serial/Puerto_Serie.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
