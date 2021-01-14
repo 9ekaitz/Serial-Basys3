@@ -1,13 +1,13 @@
 # Serial-Basys3
 This is a VHDL proyect to receive and send data from the serial on the Basys 3
 
-## Pmod RS232. 
+## Pmod RS232
 
 The Pmod RS232 communicates with the host board via the UART protocol. The arrangement of the pins is the old UART communication style (Type 3 in the Digilent Pmod Interface Specification) so that a crossover cable will be required if attaching this Pmod to one of the dedicated UART Pmod headers on any of the newer Digilent microcontroller boards. For a list of which MCU boards use the old UART protocol, see our explanation
 
 ![Alt text](https://reference.digilentinc.com/_media/pmod/pmod/rs232/temp2.png "Pmod RS232")
 
-## Basys3. 
+## Xilink Basys3 FPGA
 The on-board Pmod expansion port, labeled "JXADC", is wired to the auxiliary analog input pins of the FPGA. Depending on the configuration, this connector can be used to input differential analog signals to the analog-to-digital converter inside the Artix-7 (XADC). Any or all pairs in the connector can be configured either as analog input or digital input-output. 
 
 The Dual Analog/Digital Pmod on the Basys 3differs from the rest in the routing of its traces. The eight data signals are grouped into four pairs, with the pairs routed closely coupled for better analog noise immunity. Furthermore, each pair has a partially loaded anti-alias filter laid out on the PCB. The filter does not havecapacitors C33-C36. In designs where such filters are desired, the capacitors can be manually loaded by the user.
