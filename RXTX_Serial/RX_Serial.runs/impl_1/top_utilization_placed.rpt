@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Wed Jan 13 16:36:25 2021
-| Host         : LAPTOP-0NMBGPLN running 64-bit major release  (build 9200)
+| Date         : Thu Jan 14 20:35:30 2021
+| Host         : DESKTOP-6C35MAJ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
 | Design       : top
 | Device       : 7a35tcpg236-1

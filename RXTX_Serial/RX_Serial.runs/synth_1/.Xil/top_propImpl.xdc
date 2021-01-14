@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/iarambururo/OneDrive - Mondragon Unibertsitatea/.cosas de clase/2020-2021/2.curso/Sistemas programables/Vivado/Serial-Basys3-main/RXtx_Serial - el mio/RX_Serial.srcs/constrs_1/imports/Sistema Logiko Programagarriak/Basys3_Master.xdc} rfile:{../../../RX_Serial.srcs/constrs_1/imports/Sistema Logiko Programagarriak/Basys3_Master.xdc} id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/RXTX_Serial/RX_Serial.srcs/constrs_1/imports/Sistema Logiko Programagarriak/Basys3_Master.xdc} rfile:{../../../RX_Serial.srcs/constrs_1/imports/Sistema Logiko Programagarriak/Basys3_Master.xdc} id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
