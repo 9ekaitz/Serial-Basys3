@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Tue Jan 19 18:11:41 2021
+| Date             : Wed Jan 20 16:16:27 2021
 | Host             : DESKTOP-6C35MAJ running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -29,18 +29,18 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+-------+
-| Total On-Chip Power (W)  | 0.732 |
-| Dynamic (W)              | 0.659 |
-| Device Static (W)        | 0.073 |
-| Effective TJA (C/W)      | 5.0   |
-| Max Ambient (C)          | 81.3  |
-| Junction Temperature (C) | 28.7  |
-| Confidence Level         | Low   |
-| Setting File             | ---   |
-| Simulation Activity File | ---   |
-| Design Nets Matched      | NA    |
-+--------------------------+-------+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 33.146 (Junction temp exceeded!) |
+| Dynamic (W)              | 32.660                           |
+| Device Static (W)        | 0.486                            |
+| Effective TJA (C/W)      | 5.0                              |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
 
 
 1.1 On-Chip Components
@@ -49,17 +49,17 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic             |     0.341 |      306 |       --- |             --- |
-|   LUT as Logic          |     0.232 |       61 |     20800 |            0.29 |
-|   CARRY4                |     0.054 |       28 |      8150 |            0.34 |
-|   Register              |     0.032 |      152 |     41600 |            0.37 |
+| Slice Logic             |     0.732 |      560 |       --- |             --- |
+|   LUT as Logic          |     0.598 |      204 |     20800 |            0.98 |
+|   CARRY4                |     0.065 |       66 |      8150 |            0.81 |
+|   Register              |     0.046 |      188 |     41600 |            0.45 |
 |   BUFG                  |     0.023 |        2 |        32 |            6.25 |
 |   LUT as Shift Register |    <0.001 |       12 |      9600 |            0.13 |
-|   Others                |     0.000 |       22 |       --- |             --- |
-| Signals                 |     0.306 |      216 |       --- |             --- |
-| I/O                     |     0.012 |       22 |       106 |           20.75 |
-| Static Power            |     0.073 |          |           |                 |
-| Total                   |     0.732 |          |           |                 |
+|   Others                |     0.000 |       27 |       --- |             --- |
+| Signals                 |     0.829 |      416 |       --- |             --- |
+| I/O                     |    31.099 |       22 |       106 |           20.75 |
+| Static Power            |     0.486 |          |           |                 |
+| Total                   |    33.146 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,16 +69,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.670 |       0.659 |      0.011 |
-| Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vccint    |       1.000 |     1.909 |       1.569 |      0.341 |
+| Vccaux    |       1.800 |     1.193 |       1.139 |      0.053 |
+| Vcco33    |       3.300 |     8.801 |       8.800 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.010 |       0.000 |      0.010 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -133,15 +133,17 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------+-----------+
-| Name | Power (W) |
-+------+-----------+
-| top  |     0.659 |
-|   U1 |     0.398 |
-|   U2 |     0.014 |
-|   U4 |    <0.001 |
-|   U6 |    <0.001 |
-|   U7 |     0.172 |
-+------+-----------+
++-------+-----------+
+| Name  | Power (W) |
++-------+-----------+
+| top   |    32.660 |
+|   U1  |     0.612 |
+|   U12 |     0.249 |
+|   U2  |     0.015 |
+|   U3  |     0.390 |
+|   U6  |     0.000 |
+|   U7  |     0.156 |
+|   U8  |     0.082 |
++-------+-----------+
 
 

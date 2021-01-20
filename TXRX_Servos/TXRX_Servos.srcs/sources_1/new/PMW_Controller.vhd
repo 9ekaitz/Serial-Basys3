@@ -22,7 +22,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.STD_LOGIC_SIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -36,7 +36,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity PWM_controller is
     Port ( clk : in STD_LOGIC;
            angle_byte : in STD_LOGIC_VECTOR (7 downto 0);
-           pwm : out STD_LOGIC);
+           pmw_complete : out STD_LOGIC;
+           pmw : out STD_LOGIC);
 end PWM_controller;
 
 architecture Behavioral of PWM_controller is
@@ -47,10 +48,9 @@ signal current, next_state: STATE;
 
 begin
 
--- angle <= conv_integer(unsigned(angle_byte));
-angle <= 25;
-aux1 <= 19998 - (1000 +8*angle);
-aux2 <= 1000 + 8*angle;
+angle <= conv_integer(signed(angle_byte));
+aux1 <= 19998 - (500 +16*angle);
+aux2 <= 500 + 16*angle;
 
 SEQ: process (clk, current)
 begin 
@@ -70,15 +70,17 @@ COMB: process (current, kont_idle, kont_send)
 begin
     case current is
     when IDLE =>
-        pwm <= '0';
+        pmw_complete <= '0';
+        pmw <= '0';
         if kont_idle = aux1 then
            next_state <= SEND;
         else
            next_state <= current;
         end if;
     when SEND =>
-        pwm <= '1';
+        pmw <= '1';       
         if kont_send = aux2 then
+        pmw_complete <= '1';
            next_state <= IDLE;
         else
             next_state <= current;

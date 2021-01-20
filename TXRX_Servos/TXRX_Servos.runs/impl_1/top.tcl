@@ -54,12 +54,12 @@ set rc [catch {
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/gorka/Documents/Repostiorios/TXRX_Servos/TXRX_Servos.cache/wt [current_project]
-  set_property parent.project_path C:/Users/gorka/Documents/Repostiorios/TXRX_Servos/TXRX_Servos.xpr [current_project]
-  set_property ip_output_repo C:/Users/gorka/Documents/Repostiorios/TXRX_Servos/TXRX_Servos.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.cache/wt [current_project]
+  set_property parent.project_path C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.xpr [current_project]
+  set_property ip_output_repo C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/gorka/Documents/Repostiorios/TXRX_Servos/TXRX_Servos.runs/synth_1/top.dcp
-  read_xdc {{C:/Users/gorka/Documents/Repostiorios/TXRX_Servos/TXRX_Servos.srcs/constrs_1/imports/Sistema Logiko Programagarriak/Basys3_Master.xdc}}
+  add_files -quiet C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/synth_1/top.dcp
+  read_xdc {{C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/constrs_1/imports/Sistema Logiko Programagarriak/Basys3_Master.xdc}}
   link_design -top top -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
