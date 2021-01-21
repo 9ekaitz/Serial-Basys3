@@ -35,7 +35,11 @@ entity top is
     Port (       clk : in std_logic; 
                  serial_in : in std_logic;
                  serial_out: out std_logic;
-                 serial_pmw_port : out STD_LOGIC;
+                 a_pmw_port : out STD_LOGIC;
+                 b_pmw_port : out STD_LOGIC;
+                 c_pmw_port : out STD_LOGIC;
+                 d_pmw_port : out STD_LOGIC;
+                 e_pmw_port : out STD_LOGIC;
                  imp: out STD_LOGIC_VECTOR (5 downto 0);               
                  an : out STD_LOGIC_VECTOR (3 downto 0);
                  seg : out STD_LOGIC_VECTOR (7 downto 0));
@@ -102,6 +106,16 @@ component divisor_display is
            ehuneko: out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
+component duplicator is
+     Port ( pmw_signal : in STD_LOGIC;
+            a : out STD_LOGIC;
+            b : out STD_LOGIC;
+            c : out STD_LOGIC;
+            d : out STD_LOGIC;
+            e : out STD_LOGIC
+            );
+end component;
+
 signal data: STD_LOGIC_VECTOR (7 downto 0);
 signal clk_16_x: STD_LOGIC;
 signal clk_pmw : STD_LOGIC;
@@ -116,7 +130,7 @@ signal clk_refresh : STD_LOGIC;
 signal data_bateko, data_hamarreko, data_ehuneko : STD_LOGIC_VECTOR (7 downto 0);
 signal zenb_bateko, zenb_hamarreko, zenb_ehuneko : STD_LOGIC_VECTOR (7 downto 0);
 
-
+signal pmw_signal : STD_LOGIC;
 
 signal s_uno,s_dos,s_tres,s_cuatro: STD_LOGIC_VECTOR (7 downto 0);
 
@@ -153,7 +167,7 @@ U6: Memoria port map(
 U7: PWM_controller port map ( clk => clk_pmw,
                               angle_byte => data_out,
                               pmw_complete => pmw_complete,
-                              pmw => serial_pmw_port);
+                              pmw => pmw_signal);
                               
 U8: divisor_display port map ( zenb => data_out,
                                bateko => data_bateko,
@@ -175,5 +189,13 @@ U12: EM_display port map ( clk => clk_refresh,
                            zenb_ehuneko => zenb_ehuneko,
                            anodo => an,
                            katodo => seg);
+                           
+U13: duplicator port map ( pmw_signal => pmw_signal,
+                           a => a_pmw_port,
+                           b => b_pmw_port,
+                           c => c_pmw_port,
+                           d => d_pmw_port,
+                           e => e_pmw_port
+                           );
 
 end Behavioral;

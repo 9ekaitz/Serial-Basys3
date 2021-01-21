@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Wed Jan 20 16:16:06 2021
+| Date         : Thu Jan 21 13:51:38 2021
 | Host         : DESKTOP-6C35MAJ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -33,7 +33,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              29 |           14 |
+| No           | No                    | No                     |              29 |           16 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |             138 |           35 |
 | Yes          | No                    | No                     |              21 |            4 |
@@ -50,15 +50,15 @@ Table of Contents
 +------------------------------+---------------+--------------------------------+------------------+----------------+
 |  U7/next_state1_carry__1_n_1 |               | U7/clear                       |                1 |              1 |
 |  current_reg_i_2_n_0         |               |                                |                1 |              1 |
-|  U1/CLK                      |               |                                |                1 |              2 |
+|  U1/CLK                      |               |                                |                2 |              2 |
 |  U3/oraingoa_reg_n_0_[1]     |               |                                |                3 |              8 |
-|  U3/oraingoa[0]              |               |                                |                2 |              8 |
+|  U3/oraingoa[0]              |               |                                |                3 |              8 |
 |  clk_IBUF_BUFG               |               | U1/baud_count[9]_i_1_n_0       |                2 |              9 |
 |  clk_IBUF_BUFG               |               |                                |                7 |             10 |
 |  clk_IBUF_BUFG               |               | U1/pmw_count0_carry__2_n_0     |                8 |             32 |
 |  clk_IBUF_BUFG               |               | U1/refresh_count0_carry__2_n_0 |                8 |             32 |
-|  current_reg_i_2_n_0         |               | U7/serial_pmw_port_OBUF        |                8 |             32 |
 |  current_reg_i_2_n_0         |               | U7/clear                       |                8 |             32 |
+|  current_reg_i_2_n_0         |               | U7/e_pmw_port_OBUF             |                8 |             32 |
 |  clk_IBUF_BUFG               | U1/clk_16_x   |                                |                7 |             40 |
 +------------------------------+---------------+--------------------------------+------------------+----------------+
 
