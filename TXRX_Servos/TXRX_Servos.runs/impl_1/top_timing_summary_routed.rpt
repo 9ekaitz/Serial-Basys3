@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Thu Jan 21 13:51:58 2021
+| Date         : Thu Jan 21 17:48:36 2021
 | Host         : DESKTOP-6C35MAJ running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design       : top
@@ -52,95 +52,427 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 123 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 154 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
- There are 65 register/latch pins with no clock driven by root clock pin: U1/clk_pmw_s_reg/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[10]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[11]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[12]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[13]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[14]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[15]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[16]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[17]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[18]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[19]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[20]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[21]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[22]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[23]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[24]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[25]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[26]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[27]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[28]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[29]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[30]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[31]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[7]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[8]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: A_HAND/kont_send_reg[9]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[10]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[11]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[12]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[13]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[14]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[15]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[16]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[17]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[18]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[19]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[20]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[21]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[22]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[23]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[24]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[25]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[26]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[27]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[28]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[29]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[30]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[31]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[7]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[8]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: B_HAND/kont_send_reg[9]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[10]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[11]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[12]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[13]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[14]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[15]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[16]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[17]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[18]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[19]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[20]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[21]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[22]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[23]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[24]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[25]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[26]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[27]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[28]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[29]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[30]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[31]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[7]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[8]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: C_HAND/kont_send_reg[9]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[10]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[11]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[12]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[13]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[14]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[15]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[16]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[17]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[18]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[19]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[20]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[21]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[22]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[23]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[24]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[25]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[26]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[27]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[28]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[29]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[30]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[31]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[7]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[8]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: D_HAND/kont_send_reg[9]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[10]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[11]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[12]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[13]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[14]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[15]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[16]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[17]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[18]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[19]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[20]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[21]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[22]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[23]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[24]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[25]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[26]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[27]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[28]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[29]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[30]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[31]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[7]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[8]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: E_HAND/kont_send_reg[9]/Q (HIGH)
+
+ There are 325 register/latch pins with no clock driven by root clock pin: U1/clk_pmw_s_reg/Q (HIGH)
 
  There are 2 register/latch pins with no clock driven by root clock pin: U1/clk_refresh_s_reg/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U3/data_out_reg[0]/Q (HIGH)
+ There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[0]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U3/data_out_reg[1]/Q (HIGH)
+ There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[1]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U3/data_out_reg[2]/Q (HIGH)
+ There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[2]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U3/data_out_reg[3]/Q (HIGH)
+ There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[3]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U3/data_out_reg[4]/Q (HIGH)
+ There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[4]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U3/data_out_reg[5]/Q (HIGH)
+ There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[5]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U3/data_out_reg[6]/Q (HIGH)
+ There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[6]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U3/data_out_reg[7]/Q (HIGH)
+ There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[7]/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: U3/oraingoa_reg[0]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_a_reg[0]/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: U3/oraingoa_reg[1]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_a_reg[1]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[0]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_a_reg[2]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[10]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_a_reg[3]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[11]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_a_reg[4]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[12]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_a_reg[5]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[13]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_a_reg[6]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[14]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_a_reg[7]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[15]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_b_reg[0]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[16]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_b_reg[1]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[17]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_b_reg[2]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[18]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_b_reg[3]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[19]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_b_reg[4]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[1]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_b_reg[5]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[20]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_b_reg[6]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[21]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_b_reg[7]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[22]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_c_reg[0]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[23]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_c_reg[1]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[24]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_c_reg[2]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[25]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_c_reg[3]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[26]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_c_reg[4]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[27]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_c_reg[5]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[28]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_c_reg[6]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[29]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_c_reg[7]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[2]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_d_reg[0]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[30]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_d_reg[1]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[31]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_d_reg[2]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[3]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_d_reg[3]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[4]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_d_reg[4]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[5]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_d_reg[5]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[6]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_d_reg[6]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[7]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_d_reg[7]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[8]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_e_reg[0]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: U7/kont_send_reg[9]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_e_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_e_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_e_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_e_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_e_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_e_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: U15/angle_e_reg[7]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -155,7 +487,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 385 pins that are not constrained for maximum delay. (HIGH)
+ There are 996 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

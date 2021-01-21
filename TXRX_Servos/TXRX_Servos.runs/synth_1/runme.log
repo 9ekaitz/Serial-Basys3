@@ -14,15 +14,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11724 
+INFO: Helper process launched with PID 15128 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 376.941 ; gain = 77.965
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 377.426 ; gain = 78.430
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:48]
-INFO: [Synth 8-3491] module 'FrekuentziaZatitzailea' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:15' bound to instance 'U1' of component 'FrekuentziaZatitzailea' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:49]
+INFO: [Synth 8-3491] module 'FrekuentziaZatitzailea' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:15' bound to instance 'U1' of component 'FrekuentziaZatitzailea' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:164]
 INFO: [Synth 8-638] synthesizing module 'FrekuentziaZatitzailea' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:22]
 INFO: [Synth 8-256] done synthesizing module 'FrekuentziaZatitzailea' (1#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:22]
-INFO: [Synth 8-3491] module 'kcuart_rx' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:12' bound to instance 'U2' of component 'kcuart_rx' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:147]
+INFO: [Synth 8-3491] module 'kcuart_rx' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:12' bound to instance 'U2' of component 'kcuart_rx' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:170]
 INFO: [Synth 8-638] synthesizing module 'kcuart_rx' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:23]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'sync_reg' to cell 'FD' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:67]
@@ -139,43 +139,50 @@ WARNING: [Synth 8-2887] Directive 'init' on 'valid_lut' is unsupported and ignor
 WARNING: [Synth 8-2887] Directive 'init' on 'purge_lut' is unsupported and ignored
 WARNING: [Synth 8-2887] Directive 'init' on 'strobe_lut' is unsupported and ignored
 INFO: [Synth 8-256] done synthesizing module 'kcuart_rx' (2#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:23]
-INFO: [Synth 8-3491] module 'EM' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM.vhd:35' bound to instance 'U3' of component 'EM' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:154]
-INFO: [Synth 8-638] synthesizing module 'EM' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM.vhd:44]
-WARNING: [Synth 8-614] signal 'data_strobe' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM.vhd:64]
-WARNING: [Synth 8-614] signal 'datain' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM.vhd:64]
-WARNING: [Synth 8-614] signal 's_data' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM.vhd:64]
-INFO: [Synth 8-256] done synthesizing module 'EM' (3#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM.vhd:44]
-INFO: [Synth 8-3491] module 'Memoria' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Memoria.vhd:36' bound to instance 'U6' of component 'Memoria' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:161]
-INFO: [Synth 8-638] synthesizing module 'Memoria' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Memoria.vhd:43]
-WARNING: [Synth 8-614] signal 's_memoria' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Memoria.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'Memoria' (4#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Memoria.vhd:43]
-INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'U7' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:43]
-WARNING: [Synth 8-614] signal 'aux1' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:69]
-WARNING: [Synth 8-614] signal 'aux2' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:69]
-INFO: [Synth 8-256] done synthesizing module 'PWM_controller' (5#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:43]
-INFO: [Synth 8-3491] module 'divisor_display' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/divisor_display.vhd:36' bound to instance 'U8' of component 'divisor_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:172]
+INFO: [Synth 8-3491] module 'divisor_display' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/divisor_display.vhd:36' bound to instance 'U8' of component 'divisor_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:194]
 INFO: [Synth 8-638] synthesizing module 'divisor_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/divisor_display.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'divisor_display' (6#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/divisor_display.vhd:43]
-INFO: [Synth 8-3491] module 'display7' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:34' bound to instance 'U9' of component 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:177]
+INFO: [Synth 8-256] done synthesizing module 'divisor_display' (3#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/divisor_display.vhd:43]
+INFO: [Synth 8-3491] module 'display7' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:34' bound to instance 'U9' of component 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:199]
 INFO: [Synth 8-638] synthesizing module 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'display7' (7#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:39]
-INFO: [Synth 8-3491] module 'display7' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:34' bound to instance 'U10' of component 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:180]
-INFO: [Synth 8-3491] module 'display7' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:34' bound to instance 'U11' of component 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:183]
-INFO: [Synth 8-3491] module 'EM_display' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:34' bound to instance 'U12' of component 'EM_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:186]
+INFO: [Synth 8-256] done synthesizing module 'display7' (4#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:39]
+INFO: [Synth 8-3491] module 'display7' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:34' bound to instance 'U10' of component 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:202]
+INFO: [Synth 8-3491] module 'display7' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:34' bound to instance 'U11' of component 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:205]
+INFO: [Synth 8-3491] module 'EM_display' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:34' bound to instance 'U12' of component 'EM_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:208]
 INFO: [Synth 8-638] synthesizing module 'EM_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:44]
 WARNING: [Synth 8-614] signal 'zenb_bateko' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:57]
 WARNING: [Synth 8-614] signal 'zenb_hamarreko' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:57]
 WARNING: [Synth 8-614] signal 'zenb_ehuneko' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:57]
-INFO: [Synth 8-256] done synthesizing module 'EM_display' (8#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:44]
-INFO: [Synth 8-3491] module 'duplicator' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/duplicator.vhd:34' bound to instance 'U13' of component 'duplicator' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:193]
-INFO: [Synth 8-638] synthesizing module 'duplicator' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/duplicator.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'duplicator' (9#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/duplicator.vhd:44]
-WARNING: [Synth 8-3848] Net serial_out in module/entity top does not have driver. [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'top' (10#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'EM_display' (5#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:44]
+INFO: [Synth 8-3491] module 'Data_memoria' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:34' bound to instance 'U14' of component 'Data_memoria' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'Data_memoria' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:49]
+WARNING: [Synth 8-614] signal 'data_receive' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:67]
+WARNING: [Synth 8-614] signal 'a_pmw_complete' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:67]
+WARNING: [Synth 8-614] signal 'b_pmw_complete' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:67]
+WARNING: [Synth 8-614] signal 'c_pmw_complete' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:67]
+WARNING: [Synth 8-614] signal 'd_pmw_complete' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:67]
+WARNING: [Synth 8-614] signal 'e_pmw_complete' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'Data_memoria' (6#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:49]
+INFO: [Synth 8-3491] module 'selector' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:34' bound to instance 'U15' of component 'selector' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'selector' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:46]
+WARNING: [Synth 8-614] signal 'id' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:50]
+WARNING: [Synth 8-614] signal 'angle' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'selector' (7#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:46]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'A_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:43]
+WARNING: [Synth 8-614] signal 'aux1' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:69]
+WARNING: [Synth 8-614] signal 'aux2' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'PWM_controller' (8#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:43]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'B_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:249]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'C_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:254]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'D_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:259]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'E_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:264]
+WARNING: [Synth 8-3848] Net serial_out in module/entity top does not have driver. [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'top' (9#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:49]
+WARNING: [Synth 8-3331] design selector has unconnected port clk
+WARNING: [Synth 8-3331] design Data_memoria has unconnected port reset
 WARNING: [Synth 8-3331] design top has unconnected port serial_out
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 417.020 ; gain = 118.043
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 417.504 ; gain = 118.508
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -185,7 +192,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 417.020 ; gain = 118.043
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 417.504 ; gain = 118.508
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -205,40 +212,49 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FD => FDRE: 3 instances
   FDE => FDRE: 21 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 707.957 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 709.441 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "clk_16_x" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element pmw_count_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:45]
 WARNING: [Synth 8-6014] Unused sequential element refresh_count_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:52]
-WARNING: [Synth 8-6014] Unused sequential element kont_idle_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:60]
-WARNING: [Synth 8-6014] Unused sequential element kont_send_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:61]
 INFO: [Synth 8-5545] ROM "bateko" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "hamarreko" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "ehuneko" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "seg_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "id" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "angle_a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_c" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_e" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element kont_idle_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element kont_send_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:61]
 WARNING: [Synth 8-2887] Directive 'init' on 'valid_lut' is unsupported and ignored
 WARNING: [Synth 8-2887] Directive 'init' on 'purge_lut' is unsupported and ignored
 WARNING: [Synth 8-2887] Directive 'init' on 'strobe_lut' is unsupported and ignored
-WARNING: [Synth 8-327] inferring latch for variable 'data_out_reg' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM.vhd:87]
-WARNING: [Synth 8-327] inferring latch for variable 's_data_reg' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM.vhd:81]
+WARNING: [Synth 8-327] inferring latch for variable 'angle_a_reg' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'angle_b_reg' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'angle_c_reg' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:60]
+WARNING: [Synth 8-327] inferring latch for variable 'angle_d_reg' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:63]
+WARNING: [Synth 8-327] inferring latch for variable 'angle_e_reg' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:66]
 WARNING: [Synth 8-327] inferring latch for variable 'pmw_complete_reg' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:73]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -251,13 +267,14 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
 	   4 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
 	   2 Input     10 Bit       Adders := 1     
 +---Registers : 
 	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 5     
+	                1 Bit    Registers := 8     
 +---Multipliers : 
 	                 5x28  Multipliers := 1     
 +---Muxes : 
@@ -265,9 +282,11 @@ Detailed RTL Component Info :
 	   4 Input      8 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 2     
 	   4 Input      4 Bit        Muxes := 1     
-	   5 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -284,25 +303,6 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 3     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module EM 
-Detailed RTL Component Info : 
-+---Registers : 
-	                2 Bit    Registers := 1     
-+---Muxes : 
-	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module Memoria 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module PWM_controller 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 2     
 Module divisor_display 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -323,6 +323,28 @@ Detailed RTL Component Info :
 	   4 Input      8 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
+Module Data_memoria 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+Module selector 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 5     
+Module PWM_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -338,15 +360,24 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "U1/clk_16_x" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element U1/pmw_count_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:45]
-WARNING: [Synth 8-6014] Unused sequential element U1/refresh_count_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:52]
-WARNING: [Synth 8-6014] Unused sequential element U7/kont_send_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:61]
-WARNING: [Synth 8-6014] Unused sequential element U7/kont_idle_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:60]
-WARNING: [Synth 8-3917] design top has port seg[7] driven by constant 1
+INFO: [Synth 8-5546] ROM "clk_16_x" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element pmw_count_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element refresh_count_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element kont_send_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element kont_idle_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element kont_send_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element kont_idle_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element kont_send_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element kont_idle_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element kont_send_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element kont_idle_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element kont_send_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element kont_idle_reg was removed.  [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:60]
+WARNING: [Synth 8-3331] design selector has unconnected port clk
 WARNING: [Synth 8-3331] design top has unconnected port serial_out
+WARNING: [Synth 8-3331] design top has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -358,13 +389,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -376,7 +407,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -400,7 +431,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -413,7 +444,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -425,25 +456,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -460,19 +491,19 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     2|
-|2     |CARRY4 |    66|
-|3     |LUT1   |   142|
-|4     |LUT2   |    89|
-|5     |LUT3   |    30|
-|6     |LUT4   |    25|
-|7     |LUT5   |    15|
-|8     |LUT6   |    88|
+|2     |CARRY4 |   182|
+|3     |LUT1   |   406|
+|4     |LUT2   |   110|
+|5     |LUT3   |   161|
+|6     |LUT4   |    34|
+|7     |LUT5   |    42|
+|8     |LUT6   |   144|
 |9     |SRL16E |    19|
 |10    |FD     |     3|
 |11    |FDE    |    21|
-|12    |FDRE   |   147|
-|13    |LD     |    16|
-|14    |LDC    |     1|
+|12    |FDRE   |   438|
+|13    |LD     |    40|
+|14    |LDC    |     5|
 |15    |IBUF   |     2|
 |16    |OBUF   |    17|
 |17    |OBUFT  |     7|
@@ -482,36 +513,40 @@ Report Instance Areas:
 +------+---------+-----------------------+------+
 |      |Instance |Module                 |Cells |
 +------+---------+-----------------------+------+
-|1     |top      |                       |   690|
-|2     |  U1     |FrekuentziaZatitzailea |   240|
-|3     |  U12    |EM_display             |    10|
-|4     |  U2     |kcuart_rx              |    46|
-|5     |  U3     |EM                     |   143|
-|6     |  U6     |Memoria                |     1|
-|7     |  U7     |PWM_controller         |   175|
-|8     |  U8     |divisor_display        |    41|
+|1     |top      |                       |  1633|
+|2     |  A_HAND |PWM_controller         |   169|
+|3     |  B_HAND |PWM_controller_0       |   169|
+|4     |  C_HAND |PWM_controller_1       |   169|
+|5     |  D_HAND |PWM_controller_2       |   169|
+|6     |  E_HAND |PWM_controller_3       |   169|
+|7     |  U1     |FrekuentziaZatitzailea |   240|
+|8     |  U12    |EM_display             |     9|
+|9     |  U14    |Data_memoria           |   121|
+|10    |  U15    |selector               |   300|
+|11    |  U2     |kcuart_rx              |    46|
+|12    |  U8     |divisor_display        |    38|
 +------+---------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 707.957 ; gain = 408.980
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 709.441 ; gain = 410.445
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 707.957 ; gain = 118.043
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 707.957 ; gain = 408.980
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 709.441 ; gain = 118.508
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 709.441 ; gain = 410.445
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 253 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 41 instances were transformed.
+  A total of 69 instances were transformed.
   FD => FDRE: 3 instances
   FDE => FDRE: 21 instances
-  LD => LDCE: 16 instances
-  LDC => LDCE: 1 instances
+  LD => LDCE: 40 instances
+  LDC => LDCE: 5 instances
 
-96 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+103 Infos, 48 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 707.957 ; gain = 416.742
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 709.441 ; gain = 418.211
 INFO: [Common 17-1381] The checkpoint 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 707.957 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jan 21 13:51:06 2021...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 709.441 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 21 17:47:41 2021...

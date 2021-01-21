@@ -35,7 +35,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity EM is
     Port ( clk: in STD_LOGIC;
            data_strobe : in STD_LOGIC;          
-           send_character: out STD_LOGIC;      
+           --send : out STD_LOGIC;      
            datain: in STD_LOGIC_VECTOR (7 downto 0);
            data_out: out STD_LOGIC_VECTOR (7 downto 0)
             );
@@ -67,7 +67,7 @@ begin
     case oraingoa is
         when itzalita=> 
         
-           send_character<='0';
+           --send<='0';
 
              if data_strobe='1'   then
                      hurrengoa<=jasota;
@@ -77,13 +77,13 @@ begin
             
             
         when jasota=> 
-           send_character<='0';
+           --send<='0';
            s_data<=datain;
            hurrengoa<=bidali;
              
         when bidali=>
               
-              send_character<='1';
+              --send<='1';
               data_out<=s_data;
               if data_strobe<='0' then
                  hurrengoa<=itzalita;

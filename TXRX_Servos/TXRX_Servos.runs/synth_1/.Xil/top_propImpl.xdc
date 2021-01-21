@@ -25,6 +25,8 @@ set_property src_info {type:XDC file:1 line:104 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN V4 [get_ports {an[2]}]
 set_property src_info {type:XDC file:1 line:106 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W4 [get_ports {an[3]}]
+set_property src_info {type:XDC file:1 line:111 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U18 [get_ports {reset}]
 set_property src_info {type:XDC file:1 line:126 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN J1 [get_ports {a_pmw_port}]
 set_property src_info {type:XDC file:1 line:129 export:INPUT save:INPUT read:READ} [current_design]

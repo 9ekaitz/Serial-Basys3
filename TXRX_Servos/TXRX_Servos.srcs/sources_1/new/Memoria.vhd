@@ -35,7 +35,11 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity Memoria is
     Port ( clk:  in STD_LOGIC;
-           pmw_complete: in STD_LOGIC;
+           a_pmw_complete: in STD_LOGIC;
+           b_pmw_complete: in STD_LOGIC;
+           c_pmw_complete: in STD_LOGIC;
+           d_pmw_complete: in STD_LOGIC;
+           e_pmw_complete: in STD_LOGIC;
            data_strobe : in STD_LOGIC;
            data_strobe_m : out STD_LOGIC);
 end Memoria;
@@ -53,7 +57,7 @@ if clk'event and clk='1' then
 
     if data_strobe='1' then
         s_memoria <= data_strobe;
-    elsif pmw_complete='1' then
+    elsif a_pmw_complete='1' or b_pmw_complete='1' or c_pmw_complete='1' or d_pmw_complete='1' or e_pmw_complete='1'then
         s_memoria <= data_strobe;
     else
         s_memoria <= s_memoria;

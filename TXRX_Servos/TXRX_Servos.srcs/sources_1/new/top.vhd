@@ -33,6 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity top is
     Port (       clk : in std_logic; 
+                 reset : in STD_LOGIC;
                  serial_in : in std_logic;
                  serial_out: out std_logic;
                  a_pmw_port : out STD_LOGIC;
@@ -62,20 +63,24 @@ component kcuart_rx is
             clk : in std_logic);
 end component;
     
-component EM is
-    Port ( clk: in STD_LOGIC;
-           data_strobe : in STD_LOGIC;          
-           send_character: out STD_LOGIC;      
-           datain: in STD_LOGIC_VECTOR (7 downto 0);
-           data_out: out STD_LOGIC_VECTOR (7 downto 0));
-end component;
+--component EM is
+--    Port ( clk: in STD_LOGIC;
+--           data_strobe : in STD_LOGIC;          
+--           --send : out STD_LOGIC;      
+--           datain: in STD_LOGIC_VECTOR (7 downto 0);
+--           data_out: out STD_LOGIC_VECTOR (7 downto 0));
+--end component;
 
-component Memoria is
-    Port ( clk:  in STD_LOGIC;
-           pmw_complete: in STD_LOGIC;
-           data_strobe : in STD_LOGIC;
-           data_strobe_m : out STD_LOGIC);
-end component;
+--component Memoria is
+--    Port ( clk:  in STD_LOGIC;
+--           a_pmw_complete: in STD_LOGIC;
+--           b_pmw_complete: in STD_LOGIC;
+--           c_pmw_complete: in STD_LOGIC;
+--           d_pmw_complete: in STD_LOGIC;
+--           e_pmw_complete: in STD_LOGIC;
+--           data_strobe : in STD_LOGIC;
+--           data_strobe_m : out STD_LOGIC);
+--end component;
 
 component display7 is
     Port ( signal_in : in STD_LOGIC_VECTOR (7 downto 0);
@@ -90,13 +95,13 @@ component PWM_controller is
 end component;
 
 component EM_display is
-        Port (
-               clk : in STD_LOGIC;
-               zenb_bateko : in STD_LOGIC_VECTOR (7 downto 0);
-               zenb_hamarreko : in STD_LOGIC_VECTOR (7 downto 0);
-               zenb_ehuneko: in STD_LOGIC_VECTOR (7 downto 0);
-               anodo : out STD_LOGIC_VECTOR (3 downto 0);
-               katodo : out STD_LOGIC_VECTOR (7 downto 0));
+    Port (
+           clk : in STD_LOGIC;
+           zenb_bateko : in STD_LOGIC_VECTOR (7 downto 0);
+           zenb_hamarreko : in STD_LOGIC_VECTOR (7 downto 0);
+           zenb_ehuneko: in STD_LOGIC_VECTOR (7 downto 0);
+           anodo : out STD_LOGIC_VECTOR (3 downto 0);
+           katodo : out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
 component divisor_display is
@@ -106,33 +111,51 @@ component divisor_display is
            ehuneko: out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
-component duplicator is
-     Port ( pmw_signal : in STD_LOGIC;
-            a : out STD_LOGIC;
-            b : out STD_LOGIC;
-            c : out STD_LOGIC;
-            d : out STD_LOGIC;
-            e : out STD_LOGIC
+component Data_memoria is
+      Port ( clk : in STD_LOGIC;
+             reset : in STD_LOGIC;
+             data_in : in STD_LOGIC_VECTOR (7 downto 0);
+             data_receive : in STD_LOGIC;
+             a_pmw_complete : in STD_LOGIC;
+             b_pmw_complete : in STD_LOGIC;
+             c_pmw_complete : in STD_LOGIC;
+             d_pmw_complete : in STD_LOGIC;
+             e_pmw_complete : in STD_LOGIC;
+             angle_out : out STD_LOGIC_VECTOR (7 downto 0);
+             id_out : out STD_LOGIC_VECTOR (7 downto 0));
+end component;
+
+component selector is
+     Port ( clk : in STD_LOGIC;
+            id : in STD_LOGIC_VECTOR (7 downto 0);
+            angle : in STD_LOGIC_VECTOR (7 downto 0);
+            angle_a : out STD_LOGIC_VECTOR (7 downto 0); 
+            angle_b : out STD_LOGIC_VECTOR (7 downto 0); 
+            angle_c : out STD_LOGIC_VECTOR (7 downto 0); 
+            angle_d : out STD_LOGIC_VECTOR (7 downto 0);             
+            angle_e : out STD_LOGIC_VECTOR (7 downto 0)             
             );
 end component;
 
 signal data: STD_LOGIC_VECTOR (7 downto 0);
 signal clk_16_x: STD_LOGIC;
 signal clk_pmw : STD_LOGIC;
---signal send_character : STD_LOGIC;
+signal reset_s : STD_LOGIC;
 signal data_strobe: STD_LOGIC;
-signal pmw_complete : STD_LOGIC;
-signal send : STD_LOGIC;
-signal data_out:std_logic_vector(7 downto 0);
-signal out_boton,s_emaitza:STD_LOGIC;
+--signal send_m : STD_LOGIC;
+signal data_out : std_logic_vector(7 downto 0);
 
 signal clk_refresh : STD_LOGIC;
 signal data_bateko, data_hamarreko, data_ehuneko : STD_LOGIC_VECTOR (7 downto 0);
 signal zenb_bateko, zenb_hamarreko, zenb_ehuneko : STD_LOGIC_VECTOR (7 downto 0);
 
-signal pmw_signal : STD_LOGIC;
+signal angle, id : STD_LOGIC_VECTOR (7 downto 0);
 
 signal s_uno,s_dos,s_tres,s_cuatro: STD_LOGIC_VECTOR (7 downto 0);
+
+signal angle_a, angle_b, angle_c, angle_d, angle_e, angle_f : STD_LOGIC_VECTOR (7 downto 0);
+
+signal a_pmw_complete, b_pmw_complete, c_pmw_complete, d_pmw_complete, e_pmw_complete : STD_LOGIC;
 
 begin
 
@@ -151,25 +174,24 @@ U2: kcuart_rx port map(
             en_16_x_baud=>clk_16_x,
             clk=>clk);
            
-U3: EM port map(
-           clk =>clk,
-           data_strobe=>send,                
-           datain=>data,
-           data_out=>data_out
-           );
+--U3: EM port map(
+--           clk =>clk,
+--           data_strobe=>send_m,                
+--           datain=>data,
+--           data_out=>data_out
+--           );
            
-U6: Memoria port map(
-           clk=>clk,
-           pmw_complete=>pmw_complete,
-           data_strobe=>data_strobe,
-           data_strobe_m=>send);
-
-U7: PWM_controller port map ( clk => clk_pmw,
-                              angle_byte => data_out,
-                              pmw_complete => pmw_complete,
-                              pmw => pmw_signal);
+--U6: Memoria port map(
+--           clk=>clk,
+--           a_pmw_complete => a_pmw_complete,
+--           b_pmw_complete => b_pmw_complete,
+--           c_pmw_complete => c_pmw_complete,
+--           d_pmw_complete => d_pmw_complete,
+--           e_pmw_complete => e_pmw_complete,
+--           data_strobe=>data_strobe,
+--           data_strobe_m=>send_m);
                               
-U8: divisor_display port map ( zenb => data_out,
+U8: divisor_display port map ( zenb => id,
                                bateko => data_bateko,
                                hamarreko => data_hamarreko,
                                ehuneko => data_ehuneko);
@@ -190,12 +212,58 @@ U12: EM_display port map ( clk => clk_refresh,
                            anodo => an,
                            katodo => seg);
                            
-U13: duplicator port map ( pmw_signal => pmw_signal,
-                           a => a_pmw_port,
-                           b => b_pmw_port,
-                           c => c_pmw_port,
-                           d => d_pmw_port,
-                           e => e_pmw_port
-                           );
+--U13: duplicator port map ( pmw_signal => pmw_signal,
+--                           a => a_pmw_port,
+--                           b => b_pmw_port,
+--                           c => c_pmw_port,
+--                           d => d_pmw_port,
+--                           e => e_pmw_port
+--                           );
+
+U14 : Data_memoria port map( clk => clk,
+                             reset => reset,
+                             data_in => data,
+                             data_receive => data_strobe,
+                             a_pmw_complete => a_pmw_complete,
+                             b_pmw_complete => b_pmw_complete,
+                             c_pmw_complete => c_pmw_complete,
+                             d_pmw_complete => d_pmw_complete,
+                             e_pmw_complete => e_pmw_complete,
+                             angle_out => angle,
+                             id_out => id);
+                             
+U15 : selector port map ( clk => clk,
+                          id => id,
+                          angle => angle,
+                          angle_a => angle_a,
+                          angle_b => angle_b,
+                          angle_c => angle_c,
+                          angle_d => angle_d,            
+                          angle_e => angle_e);
+                          
+A_HAND: PWM_controller port map (   clk => clk_pmw,
+                                    angle_byte => angle_a,
+                                    pmw_complete => a_pmw_complete,
+                                    pmw => a_pmw_port);
+                                    
+B_HAND: PWM_controller port map (   clk => clk_pmw,
+                                    angle_byte => angle_b,
+                                    pmw_complete => b_pmw_complete,
+                                    pmw => b_pmw_port);
+                                    
+C_HAND: PWM_controller port map (   clk => clk_pmw,
+                                    angle_byte => angle_c,
+                                    pmw_complete => c_pmw_complete,
+                                    pmw => c_pmw_port);
+                                    
+D_HAND: PWM_controller port map (   clk => clk_pmw,
+                                    angle_byte => angle_d,
+                                    pmw_complete => d_pmw_complete,
+                                    pmw => d_pmw_port);
+                                    
+E_HAND: PWM_controller port map (   clk => clk_pmw,
+                                    angle_byte => angle_e,
+                                    pmw_complete => e_pmw_complete,
+                                    pmw => e_pmw_port);
 
 end Behavioral;

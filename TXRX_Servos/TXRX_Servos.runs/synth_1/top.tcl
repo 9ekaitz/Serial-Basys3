@@ -18,15 +18,14 @@ set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo c:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM.vhd
+  C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd
   C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd
   C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd
-  C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Memoria.vhd
   C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd
   C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd
   C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/divisor_display.vhd
-  C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/duplicator.vhd
   C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd
+  C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd
   C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
