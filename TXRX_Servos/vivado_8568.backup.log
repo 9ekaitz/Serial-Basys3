@@ -1,0 +1,747 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Jan 21 18:01:51 2021
+# Process ID: 8568
+# Current directory: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1520 C:\Users\gorka\Documents\Repostiorios\Serial-Basys3\TXRX_Servos\TXRX_Servos.xpr
+# Log file: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/vivado.log
+# Journal file: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 840.238 ; gain = 109.535
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 898.926 ; gain = 40.563
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:49]
+INFO: [Synth 8-3491] module 'FrekuentziaZatitzailea' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:15' bound to instance 'U1' of component 'FrekuentziaZatitzailea' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'FrekuentziaZatitzailea' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'FrekuentziaZatitzailea' (1#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:22]
+INFO: [Synth 8-3491] module 'kcuart_rx' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:12' bound to instance 'U2' of component 'kcuart_rx' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'kcuart_rx' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:23]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'sync_reg' to cell 'FD' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:67]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'stop_reg' to cell 'FD' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:72]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:113]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'start_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:142]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'start_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:155]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'edge_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:165]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'edge_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:178]
+	Parameter INIT bound to: 16'b0000000001000000 
+INFO: [Synth 8-113] binding component instance 'valid_lut' to cell 'LUT4' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:186]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'valid_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:196]
+	Parameter INIT bound to: 8'b01010100 
+INFO: [Synth 8-113] binding component instance 'purge_lut' to cell 'LUT3' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:204]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'purge_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:213]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:234]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-113] binding component instance 'strobe_lut' to cell 'LUT2' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:281]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'strobe_reg' to cell 'FD' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:289]
+WARNING: [Synth 8-2887] Directive 'init' on 'valid_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'purge_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'strobe_lut' is unsupported and ignored
+INFO: [Synth 8-256] done synthesizing module 'kcuart_rx' (2#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:23]
+INFO: [Synth 8-3491] module 'divisor_display' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/divisor_display.vhd:36' bound to instance 'U8' of component 'divisor_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'divisor_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/divisor_display.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'divisor_display' (3#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/divisor_display.vhd:43]
+INFO: [Synth 8-3491] module 'display7' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:34' bound to instance 'U9' of component 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'display7' (4#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:39]
+INFO: [Synth 8-3491] module 'display7' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:34' bound to instance 'U10' of component 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:202]
+INFO: [Synth 8-3491] module 'display7' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:34' bound to instance 'U11' of component 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:205]
+INFO: [Synth 8-3491] module 'EM_display' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:34' bound to instance 'U12' of component 'EM_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'EM_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:44]
+WARNING: [Synth 8-614] signal 'zenb_bateko' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:57]
+WARNING: [Synth 8-614] signal 'zenb_hamarreko' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:57]
+WARNING: [Synth 8-614] signal 'zenb_ehuneko' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'EM_display' (5#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:44]
+INFO: [Synth 8-3491] module 'Data_memoria' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:34' bound to instance 'U14' of component 'Data_memoria' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'Data_memoria' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:49]
+WARNING: [Synth 8-614] signal 'data_receive' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:67]
+WARNING: [Synth 8-614] signal 'a_pmw_complete' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:67]
+WARNING: [Synth 8-614] signal 'b_pmw_complete' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:67]
+WARNING: [Synth 8-614] signal 'c_pmw_complete' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:67]
+WARNING: [Synth 8-614] signal 'd_pmw_complete' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:67]
+WARNING: [Synth 8-614] signal 'e_pmw_complete' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'Data_memoria' (6#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:49]
+INFO: [Synth 8-3491] module 'selector' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:34' bound to instance 'U15' of component 'selector' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'selector' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:46]
+WARNING: [Synth 8-614] signal 'id' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:50]
+WARNING: [Synth 8-614] signal 'angle' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'selector' (7#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:46]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'A_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:43]
+WARNING: [Synth 8-614] signal 'aux1' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:69]
+WARNING: [Synth 8-614] signal 'aux2' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'PWM_controller' (8#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:43]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'B_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:249]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'C_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:254]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'D_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:259]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'E_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:264]
+WARNING: [Synth 8-3848] Net serial_out in module/entity top does not have driver. [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'top' (9#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:49]
+WARNING: [Synth 8-3331] design selector has unconnected port clk
+WARNING: [Synth 8-3331] design Data_memoria has unconnected port reset
+WARNING: [Synth 8-3331] design top has unconnected port serial_out
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 920.895 ; gain = 62.531
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 920.895 ; gain = 62.531
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/constrs_1/imports/Sistema Logiko Programagarriak/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/constrs_1/imports/Sistema Logiko Programagarriak/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  FD => FDRE: 3 instances
+  FDE => FDRE: 21 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1207.918 ; gain = 349.555
+85 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1207.918 ; gain = 349.555
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jan 21 18:05:34 2021] Launched synth_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/synth_1/runme.log
+[Thu Jan 21 18:05:34 2021] Launched impl_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A4D77BA
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jan 21 18:11:55 2021] Launched synth_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/synth_1/runme.log
+[Thu Jan 21 18:11:55 2021] Launched impl_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A4D77BA
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1411.672 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:50]
+INFO: [Synth 8-3491] module 'FrekuentziaZatitzailea' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:15' bound to instance 'U1' of component 'FrekuentziaZatitzailea' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'FrekuentziaZatitzailea' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'FrekuentziaZatitzailea' (1#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/FrekuentziZatitzailea.vhd:22]
+INFO: [Synth 8-3491] module 'kcuart_rx' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:12' bound to instance 'U2' of component 'kcuart_rx' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'kcuart_rx' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:23]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'sync_reg' to cell 'FD' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:67]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'stop_reg' to cell 'FD' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:72]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:113]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'start_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:142]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'start_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:155]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'edge_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:165]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'edge_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:178]
+	Parameter INIT bound to: 16'b0000000001000000 
+INFO: [Synth 8-113] binding component instance 'valid_lut' to cell 'LUT4' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:186]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'valid_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:196]
+	Parameter INIT bound to: 8'b01010100 
+INFO: [Synth 8-113] binding component instance 'purge_lut' to cell 'LUT3' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:204]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'purge_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:213]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:234]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-113] binding component instance 'strobe_lut' to cell 'LUT2' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:281]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'strobe_reg' to cell 'FD' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:289]
+WARNING: [Synth 8-2887] Directive 'init' on 'valid_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'purge_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'strobe_lut' is unsupported and ignored
+INFO: [Synth 8-256] done synthesizing module 'kcuart_rx' (2#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/kcuart_rx.vhd:23]
+INFO: [Synth 8-3491] module 'divisor_display' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/divisor_display.vhd:36' bound to instance 'U8' of component 'divisor_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'divisor_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/divisor_display.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'divisor_display' (3#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/divisor_display.vhd:43]
+INFO: [Synth 8-3491] module 'display7' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:34' bound to instance 'U9' of component 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'display7' (4#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:39]
+INFO: [Synth 8-3491] module 'display7' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:34' bound to instance 'U10' of component 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:204]
+INFO: [Synth 8-3491] module 'display7' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/display.vhd:34' bound to instance 'U11' of component 'display7' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:207]
+INFO: [Synth 8-3491] module 'EM_display' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:34' bound to instance 'U12' of component 'EM_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'EM_display' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:44]
+WARNING: [Synth 8-614] signal 'zenb_bateko' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:57]
+WARNING: [Synth 8-614] signal 'zenb_hamarreko' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:57]
+WARNING: [Synth 8-614] signal 'zenb_ehuneko' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'EM_display' (5#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/EM_display.vhd:44]
+INFO: [Synth 8-3491] module 'Data_memoria' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:34' bound to instance 'U14' of component 'Data_memoria' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'Data_memoria' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:50]
+WARNING: [Synth 8-614] signal 'data_receive' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:68]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'Data_memoria' (6#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/Data_memoria.vhd:50]
+INFO: [Synth 8-3491] module 'selector' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:34' bound to instance 'U15' of component 'selector' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'selector' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:46]
+WARNING: [Synth 8-614] signal 'id' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:50]
+WARNING: [Synth 8-614] signal 'angle' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'selector' (7#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd:46]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'A_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:43]
+WARNING: [Synth 8-614] signal 'aux1' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:69]
+WARNING: [Synth 8-614] signal 'aux2' is read in the process but is not in the sensitivity list [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'PWM_controller' (8#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:43]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'B_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:252]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'C_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:257]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'D_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:262]
+INFO: [Synth 8-3491] module 'PWM_controller' declared at 'C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd:36' bound to instance 'E_HAND' of component 'PWM_controller' [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:267]
+WARNING: [Synth 8-3848] Net serial_out in module/entity top does not have driver. [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'top' (9#1) [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/top.vhd:50]
+WARNING: [Synth 8-3331] design selector has unconnected port clk
+WARNING: [Synth 8-3331] design Data_memoria has unconnected port a_pmw_complete
+WARNING: [Synth 8-3331] design Data_memoria has unconnected port b_pmw_complete
+WARNING: [Synth 8-3331] design Data_memoria has unconnected port c_pmw_complete
+WARNING: [Synth 8-3331] design Data_memoria has unconnected port d_pmw_complete
+WARNING: [Synth 8-3331] design Data_memoria has unconnected port e_pmw_complete
+WARNING: [Synth 8-3331] design top has unconnected port serial_out
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1411.672 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1411.672 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/constrs_1/imports/Sistema Logiko Programagarriak/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/constrs_1/imports/Sistema Logiko Programagarriak/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  FD => FDRE: 3 instances
+  FDE => FDRE: 21 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1469.008 ; gain = 57.336
+84 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1469.008 ; gain = 57.336
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A4D77BA
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jan 21 18:17:20 2021] Launched synth_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/synth_1/runme.log
+[Thu Jan 21 18:17:20 2021] Launched impl_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+update_compile_order -fileset sources_1
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jan 21 18:23:05 2021] Launched synth_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/synth_1/runme.log
+[Thu Jan 21 18:23:05 2021] Launched impl_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A4D77BA
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jan 21 18:28:20 2021] Launched synth_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/synth_1/runme.log
+[Thu Jan 21 18:28:20 2021] Launched impl_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A4D77BA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jan 21 18:32:28 2021] Launched synth_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/synth_1/runme.log
+[Thu Jan 21 18:32:28 2021] Launched impl_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A4D77BA
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jan 21 18:35:23 2021] Launched synth_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/synth_1/runme.log
+[Thu Jan 21 18:35:23 2021] Launched impl_1...
+Run output will be captured here: C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A4D77BA
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A4D77BA
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183A4D77BA" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183A4D77BA" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A4D77BA
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A4D77BA
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 21 18:43:14 2021...

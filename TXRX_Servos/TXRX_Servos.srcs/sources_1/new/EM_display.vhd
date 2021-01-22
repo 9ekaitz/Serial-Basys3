@@ -36,14 +36,14 @@ entity EM_display is
                clk : in STD_LOGIC;
                zenb_bateko : in STD_LOGIC_VECTOR (7 downto 0);
                zenb_hamarreko : in STD_LOGIC_VECTOR (7 downto 0);
-               zenb_ehuneko: in STD_LOGIC_VECTOR (7 downto 0);
+               zenb_id: in STD_LOGIC_VECTOR (7 downto 0);
                anodo : out STD_LOGIC_VECTOR (3 downto 0);
                katodo : out STD_LOGIC_VECTOR (7 downto 0));
 end EM_display;
 
 architecture Behavioral of EM_display is
     
-type egoera is (bateko, hamarreko, ehuneko, milako);
+type egoera is (bateko, hamarreko, ehuneko, id);
 signal oraingoa, hurrengoa: egoera;
 
 begin
@@ -66,13 +66,13 @@ begin
         katodo<=zenb_hamarreko;
         hurrengoa<=ehuneko;
     when ehuneko=>
-        anodo<="1011";
-        katodo<=zenb_ehuneko;
-        hurrengoa<=milako;
-    when milako=>
-        anodo<="0111";
-        katodo<=not"00000000";
-        hurrengoa<=bateko;
+         anodo<="1011";
+         katodo<= not "01000000";
+         hurrengoa<=id;
+    when id=>
+         anodo<="0111";
+         katodo<=zenb_id;
+         hurrengoa<=bateko;
     end case;
 end process;
 

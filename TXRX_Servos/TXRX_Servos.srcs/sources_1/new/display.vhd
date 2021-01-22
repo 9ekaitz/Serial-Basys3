@@ -21,6 +21,8 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_SIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -38,45 +40,49 @@ end display7;
 
 architecture Behavioral of display7 is
 
+signal zenb: integer;
+
 begin
 
---an_out<="1110";
---seg_out<=   "0000001" when (signal_in = "00110000") else --0
---            "1001111" when (signal_in = "00110001") else --1
---            "0010010" when (signal_in = "00110010") else --2
---            "0000110" when (signal_in = "00110011") else --3
---            "1001100" when (signal_in = "00110100") else --4
---            "0100100" when (signal_in = "00110101") else --5
---            "0100000" when (signal_in = "00110110") else --6
---            "0001111" when (signal_in = "00110111") else --7
---            "0000000" when (signal_in = "00111000") else --8
---            "0000100" when (signal_in = "00111001")      --9
---            else "1111110";                              -- -
+--zenb <= conv_integer(signed(signal_in));
 
---seg_out<=   "0000001" when (signal_in = "00000000") else --0
---            "1001111" when (signal_in = "00000001") else --1
---            "0010010" when (signal_in = "00000010") else --2
---            "0000110" when (signal_in = "00000011") else --3
---            "1001100" when (signal_in = "00000100") else --4
---            "0100100" when (signal_in = "00000101") else --5
---            "0100000" when (signal_in = "00000110") else --6
---            "0001111" when (signal_in = "00000111") else --7
---            "0000000" when (signal_in = "00001000") else --8
---            "0000100" when (signal_in = "00001001")      --9
---            else "1111110";           
+--with zenb select
+--seg_out<= not "00111111" when 0,
+--          not "00000110" when 1,
+--          not "01011011" when 2,
+--          not "01001111" when 3,
+--          not "01100110" when 4,
+--          not "01101101" when 5,
+--          not "01111101" when 6,
+--          not "00000111" when 7,
+--          not "01111111" when 8,
+--          not "01101111" when 9,
+--          not "01111001" when others;
+--          "10001000" when  100, -- A
+--          "10000011" when 101, -- b
+--          "11000110" when 102, -- C
+--          "10100001" when 103, -- d
+--          "10001101" when 104, -- E
+--          not "01111001" when others;
 
 with signal_in select
-seg_out<=not "00111111" when "0000",
-        not "00000110" when "0001",
-        not "01011011" when "0010",
-        not "01001111" when "0011",
-        not "01100110" when "0100",
-        not "01101101" when "0101",
-        not "01111101" when "0110",
-        not "00000111" when "0111",
-        not "01111111" when "1000",
-        not "01101111" when "1001",
-        not "01111001" when others;
-
+seg_out<= not "00111111" when "00000000",
+          not "00000110" when "00000001",
+          not "01011011" when "00000010",
+          not "01001111" when "00000011",
+          not "01100110" when "00000100",
+          not "01101101" when "00000101",
+          not "01111101" when "00000110",
+          not "00000111" when "00000111",
+          not "01111111" when "00001000",
+          not "01101111" when "00001001",
+          "10001000" when  "01100100", -- A
+          "10000011" when "01100101", -- b
+          "11000110" when "01100110", -- C
+          "10100001" when "01100111", -- d
+--          "10001101" when "01101000", -- E
+--          "011000" when "01101000", -- E
+          "10000110" when "01101000", -- E
+          not "01111001" when others;
 
 end Behavioral;

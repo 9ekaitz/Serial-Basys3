@@ -83,13 +83,12 @@ component PWM_controller is
 end component;
 
 component EM_display is
-    Port (
-           clk : in STD_LOGIC;
-           zenb_bateko : in STD_LOGIC_VECTOR (7 downto 0);
-           zenb_hamarreko : in STD_LOGIC_VECTOR (7 downto 0);
-           zenb_ehuneko: in STD_LOGIC_VECTOR (7 downto 0);
-           anodo : out STD_LOGIC_VECTOR (3 downto 0);
-           katodo : out STD_LOGIC_VECTOR (7 downto 0));
+   Port ( clk : in STD_LOGIC;
+          zenb_bateko : in STD_LOGIC_VECTOR (7 downto 0);
+          zenb_hamarreko : in STD_LOGIC_VECTOR (7 downto 0);
+          zenb_id: in STD_LOGIC_VECTOR (7 downto 0);
+          anodo : out STD_LOGIC_VECTOR (3 downto 0);
+          katodo : out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
 component divisor_display is
@@ -141,7 +140,7 @@ signal data_out : std_logic_vector(7 downto 0);
 
 signal clk_refresh : STD_LOGIC;
 signal data_bateko, data_hamarreko, data_ehuneko : STD_LOGIC_VECTOR (7 downto 0);
-signal zenb_bateko, zenb_hamarreko, zenb_ehuneko : STD_LOGIC_VECTOR (7 downto 0);
+signal zenb_bateko, zenb_hamarreko, zenb_id : STD_LOGIC_VECTOR (7 downto 0);
 
 signal angle, id : STD_LOGIC_VECTOR (7 downto 0);
 
@@ -170,23 +169,6 @@ U2: kcuart_rx port map(
             data_strobe=>data_strobe,
             en_16_x_baud=>clk_16_x,
             clk=>clk);
-           
---U3: EM port map(
---           clk =>clk,
---           data_strobe=>send_m,                
---           datain=>data,
---           data_out=>data_out
---           );
-           
---U6: Memoria port map(
---           clk=>clk,
---           a_pmw_complete => a_pmw_complete,
---           b_pmw_complete => b_pmw_complete,
---           c_pmw_complete => c_pmw_complete,
---           d_pmw_complete => d_pmw_complete,
---           e_pmw_complete => e_pmw_complete,
---           data_strobe=>data_strobe,
---           data_strobe_m=>send_m);
                               
 U8: divisor_display port map ( zenb => angle,
                                bateko => data_bateko,
@@ -199,13 +181,14 @@ U9: display7 port map ( signal_in => data_bateko,
 U10: display7 port map ( signal_in => data_hamarreko,
                         seg_out => zenb_hamarreko);
                         
-U11: display7 port map ( signal_in => data_ehuneko,
-                         seg_out => zenb_ehuneko);
+U11: display7 port map ( signal_in => id,
+                        seg_out => zenb_id);
+
                          
 U12: EM_display port map ( clk => clk_refresh,
+                           zenb_id => zenb_id,
                            zenb_bateko => zenb_bateko,
                            zenb_hamarreko => zenb_hamarreko,
-                           zenb_ehuneko => zenb_ehuneko,
                            anodo => an,
                            katodo => seg);
                            

@@ -56,13 +56,13 @@ begin
         when "01100101" =>
             angle_b <= angle;
             
-        when "01100111" =>
+        when "01100110" =>
             angle_c <= angle;
             
-        when "01101000" =>
+        when "01100111" =>
             angle_d <= angle;
             
-        when "01101001" =>
+        when "01101000" =>
             angle_e <= angle;
             
         when others =>

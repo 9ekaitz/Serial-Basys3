@@ -103,7 +103,7 @@ begin
              end if;
              
           when check_id =>
-               if data_in="01100100" or data_in="01100101" or data_in="01100111" or data_in="01101000" or data_in="01101001" then
+               if data_in="01100100" or data_in="01100101" or data_in="01100110" or data_in="01100111" or data_in="01101000" then
                    hurrengoa <= id_received;
                else
                    hurrengoa <= idle;
@@ -125,11 +125,11 @@ begin
                              
           when send_data => 
 --              if (a_pmw_complete='1') or (b_pmw_complete='1') or (c_pmw_complete='1') or (d_pmw_complete='1') or (e_pmw_complete='1') then
-              if data_receive = '1' then
-                    hurrengoa <= id_received;
-              else
-                    hurrengoa <= send_data;
-              end if;
+--              if data_receive = '1' then
+                    hurrengoa <= idle; --id_received
+--              else
+--                    hurrengoa <= send_data;
+--              end if;
     end case;
 
 end process;
@@ -140,7 +140,7 @@ begin
 
 if clk'event and clk='1' then
 
-    if oraingoa = id_received then
+    if oraingoa = check_id then
         id <= data_in;
         
         led_id <= '1';
