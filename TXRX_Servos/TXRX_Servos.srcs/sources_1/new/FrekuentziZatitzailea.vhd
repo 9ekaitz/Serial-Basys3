@@ -16,7 +16,8 @@ entity FrekuentziaZatitzailea is
     Port ( clk : in STD_LOGIC;
            clk_pmw : out STD_LOGIC;
            en_16_x_baud : out STD_LOGIC;
-           clk_refresh : out STD_LOGIC);
+           clk_refresh : out STD_LOGIC;
+           start_ena : out STD_LOGIC);
 end FrekuentziaZatitzailea;
 
 architecture Behavioral of FrekuentziaZatitzailea is
@@ -24,10 +25,11 @@ architecture Behavioral of FrekuentziaZatitzailea is
 signal baud_count : integer range 0 to 651 :=0;
 signal pmw_count : integer;
 signal refresh_count : integer;
-signal cont: integer ;
+signal cont: integer := 0;
 signal clk_16_x : STD_LOGIC;
 signal clk_pmw_s : STD_LOGIC;
 signal clk_refresh_s : STD_LOGIC;
+signal clk_2s : STD_LOGIC := '0';
 
 begin
 
@@ -55,6 +57,14 @@ begin
         else
             refresh_count <= refresh_count + 1;
         end if;
+        
+        if cont > 99999998 then
+--            cont <= 0;
+            clk_2s <= '1';
+        else
+            cont <= cont + 1;
+            clk_2s <= '0';
+        end if;
             
     end if;
     
@@ -63,5 +73,6 @@ end process baud_timer;
 en_16_x_baud <= clk_16_x;
 clk_pmw <= clk_pmw_s;
 clk_refresh <= clk_refresh_s;
+start_ena <= clk_2s;
 
 end Behavioral;

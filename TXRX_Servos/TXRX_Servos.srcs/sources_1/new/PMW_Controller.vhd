@@ -70,17 +70,17 @@ COMB: process (current, kont_idle, kont_send)
 begin
     case current is
     when IDLE =>
-        pmw_complete <= '0';
         pmw <= '0';
+        pmw_complete <= '0';
         if kont_idle = aux1 then
            next_state <= SEND;
         else
            next_state <= current;
         end if;
     when SEND =>
-        pmw <= '1';       
+        pmw <= '1';  
+        pmw_complete <= '1';     
         if kont_send = aux2 then
-        pmw_complete <= '1';
            next_state <= IDLE;
         else
             next_state <= current;

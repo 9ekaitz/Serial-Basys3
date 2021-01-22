@@ -50,19 +50,19 @@ begin
 SELECTOR: process (clk)
 begin
     case id is
-        when "00000001" => 
+        when "01100100" => 
             angle_a <= angle;
             
-        when "00000010" =>
+        when "01100101" =>
             angle_b <= angle;
             
-        when "00000011" =>
+        when "01100111" =>
             angle_c <= angle;
             
-        when "00000100" =>
+        when "01101000" =>
             angle_d <= angle;
             
-        when "00000101" =>
+        when "01101001" =>
             angle_e <= angle;
             
         when others =>

@@ -41,6 +41,12 @@ entity top is
                  c_pmw_port : out STD_LOGIC;
                  d_pmw_port : out STD_LOGIC;
                  e_pmw_port : out STD_LOGIC;
+                 led_send : out STD_LOGIC;
+                  led_angle : out STD_LOGIC;
+                  led_id : out STD_LOGIC;
+                  led_idle : out STD_LOGIC;
+                  led_kk : out STD_LOGIC;
+                  start: in STD_LOGIC;
                  imp: out STD_LOGIC_VECTOR (5 downto 0);               
                  an : out STD_LOGIC_VECTOR (3 downto 0);
                  seg : out STD_LOGIC_VECTOR (7 downto 0));
@@ -52,7 +58,8 @@ component FrekuentziaZatitzailea is
     Port ( clk : in STD_LOGIC;
            clk_pmw : out STD_LOGIC;
            en_16_x_baud : out STD_LOGIC;
-           clk_refresh : out STD_LOGIC);
+           clk_refresh : out STD_LOGIC;
+           start_ena : out STD_LOGIC);
 end component;
 
 component kcuart_rx is
@@ -62,25 +69,6 @@ component kcuart_rx is
             en_16_x_baud : in std_logic;
             clk : in std_logic);
 end component;
-    
---component EM is
---    Port ( clk: in STD_LOGIC;
---           data_strobe : in STD_LOGIC;          
---           --send : out STD_LOGIC;      
---           datain: in STD_LOGIC_VECTOR (7 downto 0);
---           data_out: out STD_LOGIC_VECTOR (7 downto 0));
---end component;
-
---component Memoria is
---    Port ( clk:  in STD_LOGIC;
---           a_pmw_complete: in STD_LOGIC;
---           b_pmw_complete: in STD_LOGIC;
---           c_pmw_complete: in STD_LOGIC;
---           d_pmw_complete: in STD_LOGIC;
---           e_pmw_complete: in STD_LOGIC;
---           data_strobe : in STD_LOGIC;
---           data_strobe_m : out STD_LOGIC);
---end component;
 
 component display7 is
     Port ( signal_in : in STD_LOGIC_VECTOR (7 downto 0);
@@ -113,6 +101,7 @@ end component;
 
 component Data_memoria is
       Port ( clk : in STD_LOGIC;
+             ena : in STD_LOGIC;
              reset : in STD_LOGIC;
              data_in : in STD_LOGIC_VECTOR (7 downto 0);
              data_receive : in STD_LOGIC;
@@ -121,6 +110,11 @@ component Data_memoria is
              c_pmw_complete : in STD_LOGIC;
              d_pmw_complete : in STD_LOGIC;
              e_pmw_complete : in STD_LOGIC;
+             led_send : out STD_LOGIC;
+              led_angle : out STD_LOGIC;
+              led_id : out STD_LOGIC;
+              led_idle : out STD_LOGIC;
+              led_kk : out STD_LOGIC;
              angle_out : out STD_LOGIC_VECTOR (7 downto 0);
              id_out : out STD_LOGIC_VECTOR (7 downto 0));
 end component;
@@ -157,6 +151,8 @@ signal angle_a, angle_b, angle_c, angle_d, angle_e, angle_f : STD_LOGIC_VECTOR (
 
 signal a_pmw_complete, b_pmw_complete, c_pmw_complete, d_pmw_complete, e_pmw_complete : STD_LOGIC;
 
+signal start_ena : STD_LOGIC;
+
 begin
 
 imp <= "ZZZZZZ";
@@ -165,7 +161,8 @@ U1: FrekuentziaZatitzailea port map(
             clk=>clk,
             clk_pmw=>clk_pmw,
             en_16_x_baud=>clk_16_x,
-            clk_refresh=>clk_refresh);
+            clk_refresh=>clk_refresh,
+            start_ena => start_ena);
             
 U2: kcuart_rx port map(
             serial_in=>serial_in,
@@ -191,7 +188,7 @@ U2: kcuart_rx port map(
 --           data_strobe=>data_strobe,
 --           data_strobe_m=>send_m);
                               
-U8: divisor_display port map ( zenb => id,
+U8: divisor_display port map ( zenb => angle,
                                bateko => data_bateko,
                                hamarreko => data_hamarreko,
                                ehuneko => data_ehuneko);
@@ -221,6 +218,7 @@ U12: EM_display port map ( clk => clk_refresh,
 --                           );
 
 U14 : Data_memoria port map( clk => clk,
+                             ena => start,
                              reset => reset,
                              data_in => data,
                              data_receive => data_strobe,
@@ -229,6 +227,11 @@ U14 : Data_memoria port map( clk => clk,
                              c_pmw_complete => c_pmw_complete,
                              d_pmw_complete => d_pmw_complete,
                              e_pmw_complete => e_pmw_complete,
+                             led_send => led_send,
+                              led_angle => led_angle,
+                              led_id => led_id,
+                              led_idle => led_idle,
+                              led_kk => led_kk,
                              angle_out => angle,
                              id_out => id);
                              
