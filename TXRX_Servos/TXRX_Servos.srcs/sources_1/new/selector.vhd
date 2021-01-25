@@ -33,6 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity selector is
      Port ( clk : in STD_LOGIC;
+            reset : in STD_LOGIC;
             id : in STD_LOGIC_VECTOR (7 downto 0);
             angle : in STD_LOGIC_VECTOR (7 downto 0);
             angle_a : out STD_LOGIC_VECTOR (7 downto 0); 
@@ -47,8 +48,15 @@ architecture Behavioral of selector is
 
 begin
 
-SELECTOR: process (clk)
+SELECTOR: process (clk, reset)
 begin
+if reset = '1' then
+    angle_a <= "00000000";
+    angle_b <= "00000000";
+    angle_c <= "00000000";
+    angle_d <= "00000000";
+    angle_e <= "00000000";
+elsif clk'event and clk='1' then
     case id is
         when "01100100" => 
             angle_a <= angle;
@@ -65,9 +73,10 @@ begin
         when "01101000" =>
             angle_e <= angle;
             
-        when others =>
+        when others => -- Si no se pone when others da error
             
     end case;
+end if;
 end process;
 
 end Behavioral;

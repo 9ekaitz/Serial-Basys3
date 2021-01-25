@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Fri Jan 22 17:42:55 2021
+| Date         : Mon Jan 25 17:26:45 2021
 | Host         : DESKTOP-6C35MAJ running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design       : top
@@ -52,27 +52,11 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 160 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 200 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
- There are 325 register/latch pins with no clock driven by root clock pin: U1/clk_pmw_s_reg/Q (HIGH)
+ There are 325 register/latch pins with no clock driven by root clock pin: CLK_Zatitzailea/clk_pmw_s_reg/Q (HIGH)
 
- There are 2 register/latch pins with no clock driven by root clock pin: U1/clk_refresh_s_reg/Q (HIGH)
-
- There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[0]/Q (HIGH)
-
- There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[1]/Q (HIGH)
-
- There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[2]/Q (HIGH)
-
- There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[3]/Q (HIGH)
-
- There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[4]/Q (HIGH)
-
- There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[5]/Q (HIGH)
-
- There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[6]/Q (HIGH)
-
- There are 40 register/latch pins with no clock driven by root clock pin: U14/id_out_reg[7]/Q (HIGH)
+ There are 2 register/latch pins with no clock driven by root clock pin: CLK_Zatitzailea/clk_refresh_s_reg/Q (HIGH)
 
 
 2. checking constant_clock
@@ -87,14 +71,14 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 1001 pins that are not constrained for maximum delay. (HIGH)
+ There are 1091 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There are 2 input ports with no input delay specified. (HIGH)
+ There are 3 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 

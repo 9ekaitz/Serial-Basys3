@@ -35,8 +35,8 @@ use IEEE.STD_LOGIC_SIGNED.ALL;
 
 entity PWM_controller is
     Port ( clk : in STD_LOGIC;
+           clk_pmw : in STD_LOGIC;
            angle_byte : in STD_LOGIC_VECTOR (7 downto 0);
-           pmw_complete : out STD_LOGIC;
            pmw : out STD_LOGIC);
 end PWM_controller;
 
@@ -52,9 +52,9 @@ angle <= conv_integer(signed(angle_byte));
 aux1 <= 19998 - (500 +16*angle);
 aux2 <= 500 + 16*angle;
 
-SEQ: process (clk, current)
+SEQ: process (clk_pmw, current)
 begin 
-    if clk'event and clk = '1' then
+    if clk_pmw'event and clk_pmw = '1' then
       current <= next_state;
        if current = IDLE then     
            kont_idle <= kont_idle + 1;
@@ -71,19 +71,17 @@ begin
     case current is
     when IDLE =>
         pmw <= '0';
-        pmw_complete <= '0';
-        if kont_idle = aux1 then
+        if kont_idle >= aux1 then
            next_state <= SEND;
         else
            next_state <= current;
         end if;
     when SEND =>
         pmw <= '1';  
-        pmw_complete <= '1';     
-        if kont_send = aux2 then
+        if kont_send >= aux2 then
            next_state <= IDLE;
         else
-            next_state <= current;
+           next_state <= current;
         end if;
     end case;
 end process COMB;

@@ -34,7 +34,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity divisor_display is
-    Port ( zenb : in STD_LOGIC_VECTOR (7 downto 0);
+    Port ( clk : in STD_LOGIC;
+           zenb : in STD_LOGIC_VECTOR (7 downto 0);
            bateko : out STD_LOGIC_VECTOR (7 downto 0);
            hamarreko : out STD_LOGIC_VECTOR (7 downto 0);
            ehuneko: out STD_LOGIC_VECTOR (7 downto 0));

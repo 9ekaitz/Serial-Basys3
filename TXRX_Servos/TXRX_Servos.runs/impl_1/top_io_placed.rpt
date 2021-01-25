@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date                      : Fri Jan 22 17:42:31 2021
+| Date                      : Mon Jan 25 17:26:24 2021
 | Host                      : DESKTOP-6C35MAJ running 64-bit major release  (build 9200)
 | Command                   : report_io -file top_io_placed.rpt
 | Design                    : top
@@ -271,7 +271,7 @@ Table of Contents
 | W15        |             | High Range | IO_L21N_T3_DQS_A06_D22_14    | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | W16        |             | High Range | IO_L20P_T3_A08_D24_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | W17        |             | High Range | IO_L20N_T3_A07_D23_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
-| W18        | led_kk      | High Range | IO_L16P_T2_CSI_B_14          | OUTPUT        | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
+| W18        | led_off     | High Range | IO_L16P_T2_CSI_B_14          | OUTPUT        | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | W19        |             | High Range | IO_L16N_T2_A15_D31_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 +------------+-------------+------------+------------------------------+---------------+-------------+---------+------------+------+---------------------+----------------------+---------+------------+-----------+----------+------+------------------+
 * Default value
