@@ -35,12 +35,17 @@ entity top is
     Port (       clk : in std_logic; 
                  reset : in STD_LOGIC;
                  serial_in : in std_logic;
-                 serial_out: out std_logic;
+--                 serial_out: out std_logic;
                  a_pmw_port : out STD_LOGIC;
                  b_pmw_port : out STD_LOGIC;
                  c_pmw_port : out STD_LOGIC;
                  d_pmw_port : out STD_LOGIC;
                  e_pmw_port : out STD_LOGIC;
+                 f_pmw_port : out STD_LOGIC;
+                 g_pmw_port : out STD_LOGIC;
+                 h_pmw_port : out STD_LOGIC;
+                 i_pmw_port : out STD_LOGIC;
+                 j_pmw_port : out STD_LOGIC;
                  led_send : out STD_LOGIC;
                  led_angle : out STD_LOGIC;
                  led_id : out STD_LOGIC;
@@ -123,8 +128,12 @@ component selector is
             angle_b : out STD_LOGIC_VECTOR (7 downto 0); 
             angle_c : out STD_LOGIC_VECTOR (7 downto 0); 
             angle_d : out STD_LOGIC_VECTOR (7 downto 0);             
-            angle_e : out STD_LOGIC_VECTOR (7 downto 0)             
-            );
+            angle_e : out STD_LOGIC_VECTOR (7 downto 0);
+            angle_f : out STD_LOGIC_VECTOR (7 downto 0); 
+            angle_g : out STD_LOGIC_VECTOR (7 downto 0); 
+            angle_h : out STD_LOGIC_VECTOR (7 downto 0); 
+            angle_i : out STD_LOGIC_VECTOR (7 downto 0);             
+            angle_j : out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
 -- Byte recivido
@@ -144,8 +153,7 @@ signal data_bateko, data_hamarreko, data_ehuneko : STD_LOGIC_VECTOR (7 downto 0)
 signal zenb_bateko, zenb_hamarreko, zenb_id : STD_LOGIC_VECTOR (7 downto 0);
 
 -- PMW
-signal angle_a, angle_b, angle_c, angle_d, angle_e, angle_f : STD_LOGIC_VECTOR (7 downto 0);
---signal a_pmw_complete, b_pmw_complete, c_pmw_complete, d_pmw_complete, e_pmw_complete : STD_LOGIC;
+signal angle_a, angle_b, angle_c, angle_d, angle_e, angle_f, angle_g, angle_h, angle_i, angle_j: STD_LOGIC_VECTOR (7 downto 0);
 
 signal angle, id : STD_LOGIC_VECTOR (7 downto 0);
 
@@ -214,7 +222,12 @@ SELECTOR_ANGLE : selector port map ( clk => clk,
                                      angle_b => angle_b,
                                      angle_c => angle_c,
                                      angle_d => angle_d,            
-                                     angle_e => angle_e);
+                                     angle_e => angle_e,
+                                     angle_f => angle_f,
+                                     angle_g => angle_g,
+                                     angle_h => angle_h,
+                                     angle_i => angle_i,            
+                                     angle_j => angle_j);
                           
 A_HAND: PWM_controller port map (   clk => clk,
                                     clk_pmw => clk_pmw,
@@ -240,5 +253,29 @@ E_HAND: PWM_controller port map (   clk => clk,
                                     clk_pmw => clk_pmw,
                                     angle_byte => angle_e,
                                     pmw => e_pmw_port);
-
+                                    
+F_HAND: PWM_controller port map (   clk => clk,
+                                    clk_pmw => clk_pmw,
+                                    angle_byte => angle_f,
+                                    pmw => f_pmw_port);
+                                    
+G_HAND: PWM_controller port map (   clk => clk,
+                                    clk_pmw => clk_pmw,
+                                    angle_byte => angle_g,
+                                    pmw => g_pmw_port);
+                                    
+H_HAND: PWM_controller port map (   clk => clk,
+                                    clk_pmw => clk_pmw,
+                                    angle_byte => angle_h,
+                                    pmw => h_pmw_port);
+                                    
+I_HAND: PWM_controller port map (   clk => clk,
+                                    clk_pmw => clk_pmw,
+                                    angle_byte => angle_i,
+                                    pmw => i_pmw_port);
+                                    
+J_HAND: PWM_controller port map (   clk => clk,
+                                    clk_pmw => clk_pmw,
+                                    angle_byte => angle_j,
+                                    pmw => j_pmw_port);
 end Behavioral;

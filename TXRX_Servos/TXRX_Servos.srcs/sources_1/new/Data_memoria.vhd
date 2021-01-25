@@ -75,8 +75,7 @@ begin
                 hurrengoa <= idle;
             else
                 hurrengoa <= off;
-            end if;
-                
+            end if;     
         
          when idle =>   
                 if data_receive = '1' then

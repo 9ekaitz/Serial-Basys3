@@ -172,17 +172,17 @@ set_property PACKAGE_PIN A17 [get_ports {imp[1]}]
 set_property PACKAGE_PIN C15 [get_ports {serial_in}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {serial_in}]
 ##Sch name = JB10 
-set_property PACKAGE_PIN C16 [get_ports {serial_out}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {serial_out}]
+#set_property PACKAGE_PIN C16 [get_ports {serial_out}]					
+#	set_property IOSTANDARD LVCMOS33 [get_ports {serial_out}]
 
 
 ##Pmod Header JC
 ##Sch name = JC1
-#set_property PACKAGE_PIN K17 [get_ports {serial_pmw_port}]					
-#	set_property IOSTANDARD LVCMOS33 [get_ports {serial_pmw_port}]
+set_property PACKAGE_PIN K17 [get_ports i_pmw_port}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports i_pmw_port}]
 ##Sch name = JC2
-#set_property PACKAGE_PIN M18 [get_ports {JC[1]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JC[1]}]
+set_property PACKAGE_PIN M18 [get_ports j_pmw_port}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports j_pmw_port}]
 ##Sch name = JC3
 #set_property PACKAGE_PIN N17 [get_ports {JC[2]}]					
 	#set_property IOSTANDARD LVCMOS33 [get_ports {JC[2]}]
@@ -205,26 +205,26 @@ set_property PACKAGE_PIN C16 [get_ports {serial_out}]
 
 ##Pmod Header JXADC
 ##Sch name = XA1_P
-#set_property PACKAGE_PIN J3 [get_ports {JXADC[0]}]				
-#	set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[0]}]
-##Sch name = XA2_P
-#set_property PACKAGE_PIN L3 [get_ports {JXADC[1]}]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[1]}]
+set_property PACKAGE_PIN J3 [get_ports h_pmw_port}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports h_pmw_port}]
+#Sch name = XA2_P
+set_property PACKAGE_PIN L3 [get_ports g_pmw_port}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports g_pmw_port}]
 ##Sch name = XA3_P
-#set_property PACKAGE_PIN M2 [get_ports {JXADC[2]}]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[2]}]
-##Sch name = XA4_P
+set_property PACKAGE_PIN M2 [get_ports f_pmw_port}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports f_pmw_port}]
+#Sch name = XA4_P
 set_property PACKAGE_PIN N2 [get_ports {e_pmw_port}]				
 	set_property IOSTANDARD LVCMOS33 [get_ports {e_pmw_port}]
 ##Sch name = XA1_N
-#set_property PACKAGE_PIN K3 [get_ports {JXADC[4]}]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[4]}]
-##Sch name = XA2_N
-#set_property PACKAGE_PIN M3 [get_ports {JXADC[5]}]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[5]}]
+#set_property PACKAGE_PIN K3 [get_ports {f_pmw_port}]				
+#	set_property IOSTANDARD LVCMOS33 [get_ports {f_pmw_port}]
+#Sch name = XA2_N
+#set_property PACKAGE_PIN M3 [get_ports {g_pmw_port}]				
+#	set_property IOSTANDARD LVCMOS33 [get_ports g_pmw_port}]
 ##Sch name = XA3_N
 #set_property PACKAGE_PIN M1 [get_ports {JXADC[6]}]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[6]}]
+#	set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[6]}]
 ##Sch name = XA4_N
 #set_property PACKAGE_PIN N1 [get_ports {JXADC[7]}]				
 	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[7]}]

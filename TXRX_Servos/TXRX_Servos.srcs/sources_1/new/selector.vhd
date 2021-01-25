@@ -40,8 +40,12 @@ entity selector is
             angle_b : out STD_LOGIC_VECTOR (7 downto 0); 
             angle_c : out STD_LOGIC_VECTOR (7 downto 0); 
             angle_d : out STD_LOGIC_VECTOR (7 downto 0);             
-            angle_e : out STD_LOGIC_VECTOR (7 downto 0)             
-            );
+            angle_e : out STD_LOGIC_VECTOR (7 downto 0);
+            angle_f : out STD_LOGIC_VECTOR (7 downto 0); 
+            angle_g : out STD_LOGIC_VECTOR (7 downto 0); 
+            angle_h : out STD_LOGIC_VECTOR (7 downto 0); 
+            angle_i : out STD_LOGIC_VECTOR (7 downto 0);             
+            angle_j : out STD_LOGIC_VECTOR (7 downto 0));
 end selector;
 
 architecture Behavioral of selector is
@@ -56,6 +60,12 @@ if reset = '1' then
     angle_c <= "00000000";
     angle_d <= "00000000";
     angle_e <= "00000000";
+    angle_f <= "00000000";
+    angle_g <= "00000000";
+    angle_h <= "00000000";
+    angle_i <= "00000000";
+    angle_j <= "00000000";
+    
 elsif clk'event and clk='1' then
     case id is
         when "01100100" => 
@@ -72,6 +82,21 @@ elsif clk'event and clk='1' then
             
         when "01101000" =>
             angle_e <= angle;
+           
+        when "1101001" => ----------------------------
+            angle_f <= angle;
+            
+        when "1101010" =>
+            angle_g <= angle;
+            
+        when "1101011" =>
+            angle_h <= angle;
+            
+        when "1101100" =>
+            angle_i <= angle;
+            
+        when "1101101" =>
+            angle_j <= angle;
             
         when others => -- Si no se pone when others da error
             
