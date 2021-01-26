@@ -83,19 +83,19 @@ elsif clk'event and clk='1' then
         when "01101000" =>
             angle_e <= angle;
            
-        when "1101001" => ----------------------------
+        when "01101001" => ----------------------------
             angle_f <= angle;
             
-        when "1101010" =>
+        when "01101010" =>
             angle_g <= angle;
             
-        when "1101011" =>
+        when "01101011" =>
             angle_h <= angle;
             
-        when "1101100" =>
+        when "01101100" =>
             angle_i <= angle;
             
-        when "1101101" =>
+        when "01101101" =>
             angle_j <= angle;
             
         when others => -- Si no se pone when others da error

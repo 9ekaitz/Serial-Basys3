@@ -92,7 +92,8 @@ begin
                end if;
              
           when check_id =>
-               if data_in="01100100" or data_in="01100101" or data_in="01100110" or data_in="01100111" or data_in="01101000" then
+               if data_in="01100100" or data_in="01100101" or data_in="01100110" or data_in="01100111" or data_in="01101000" or
+                  data_in="01101001" or data_in="01101010" or data_in="01101011" or data_in="01101100" or data_in="01101101" then
                    hurrengoa <= id_received;
                else
                    hurrengoa <= idle;
