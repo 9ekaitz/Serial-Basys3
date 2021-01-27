@@ -36,8 +36,7 @@ entity nagusia_display is
            id : in STD_LOGIC_VECTOR (7 downto 0);
            grado : in STD_LOGIC_VECTOR (7 downto 0);
            an : out STD_LOGIC_VECTOR (3 downto 0);
-           seg : out STD_LOGIC_VECTOR (7 downto 0);
-           rst : in STD_LOGIC);
+           seg : out STD_LOGIC_VECTOR (7 downto 0));
 end nagusia_display;
 
 architecture Behavioral of nagusia_display is

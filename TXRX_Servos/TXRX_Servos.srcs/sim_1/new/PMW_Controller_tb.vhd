@@ -63,16 +63,24 @@ clk<='0';
 wait for 5 ns;
 end process;
 
+clk_proc: process
+begin
+clk_pmw<='1';
+wait for 1000 ns;
+clk_pmw<='0';
+wait for 1000 ns;
+end process;
+
 stim_proc: process
 begin
 rst<='1';
 wait for 10 ns;
 rst<='0';
-
+angle_byte <= "00010010";
 wait for 5000 ns;
-
+angle_byte <= "0001010";
 wait for 5000 ns;
-
+angle_byte <= "00011010";
 wait;
 
 end process;              

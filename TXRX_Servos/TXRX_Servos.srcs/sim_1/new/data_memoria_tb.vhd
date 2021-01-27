@@ -83,11 +83,17 @@ begin
 rst<='1';
 wait for 10 ns;
 rst<='0';
-
-wait for 5000 ns;
-
-wait for 5000 ns;
-
+ena<= '1';
+wait for 500 ns;
+data_in <= "01100100";
+data_receive <= '1';
+wait for 500 ns;
+data_receive<= '0';
+wait for 500 ns;
+data_in <= "00010100";
+data_receive <= '1';
+wait for 500 ns;
+data_receive <= '0';
 wait;
 
 end process;

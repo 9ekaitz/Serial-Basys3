@@ -87,11 +87,11 @@ begin
 rst<='1';
 wait for 10 ns;
 rst<='0';
-
+id <= "01100100";
+angle <= "00010000";
 wait for 5000 ns;
-
-wait for 5000 ns;
-
+id <= "01100110";
+angle <= "00011100";
 wait;
 
 end process;
