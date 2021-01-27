@@ -1,6 +1,6 @@
 @echo off
 set xv_path=C:\\Xilinx\\Vivado\\2017.2\\bin
-call %xv_path%/xsim selector_tb_behav -key {Behavioral:sim_1:Functional:selector_tb} -tclbatch selector_tb.tcl -log simulate.log
+call %xv_path%/xsim PMW_Controller_tb_behav -key {Behavioral:sim_1:Functional:PMW_Controller_tb} -tclbatch PMW_Controller_tb.tcl -log simulate.log
 if "%errorlevel%"=="0" goto SUCCESS
 if "%errorlevel%"=="1" goto END
 :END

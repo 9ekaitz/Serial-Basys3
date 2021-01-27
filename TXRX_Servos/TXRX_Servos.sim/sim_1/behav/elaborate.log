@@ -1,6 +1,6 @@
 Vivado Simulator 2017.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4d8a0a9c090e40cea4ddd47f40860208 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot selector_tb_behav xil_defaultlib.selector_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4d8a0a9c090e40cea4ddd47f40860208 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PMW_Controller_tb_behav xil_defaultlib.PMW_Controller_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -10,6 +10,8 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.selector [selector_default]
-Compiling architecture behavioral of entity xil_defaultlib.selector_tb
-Built simulation snapshot selector_tb_behav
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling architecture behavioral of entity xil_defaultlib.PWM_controller [pwm_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.pmw_controller_tb
+Built simulation snapshot PMW_Controller_tb_behav

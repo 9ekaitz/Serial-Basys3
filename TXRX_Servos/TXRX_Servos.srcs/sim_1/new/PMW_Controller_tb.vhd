@@ -54,30 +54,22 @@ dut: PWM_controller port map( clk => clk,
                               clk_pmw => clk_pmw,
                               angle_byte => angle_byte,
                               pmw => pmw);
-                             
-clk_proc: process
-begin
-clk<='1';
-wait for 5 ns;
-clk<='0';
-wait for 5 ns;
-end process;
 
 clk_proc_pmw: process
 begin
 clk_pmw<='1';
-wait for 1000 ns;
+wait for 5 ps;
 clk_pmw<='0';
-wait for 1000 ns;
+wait for 5 ps;
 end process;
 
 stim_proc: process
 begin
 angle_byte <= "00010010";
-wait for 5000 ns;
-angle_byte <= "00001010";
-wait for 5000 ns;
-angle_byte <= "00011010";
+wait for 300 ns;
+angle_byte <= "01001010";
+wait for 300 ns;
+angle_byte <= "10011010";
 wait;
 
 end process;              

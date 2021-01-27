@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  "../../../TXRX_Servos.srcs/sources_1/new/selector.vhd"
-vhdl xil_defaultlib  "../../../TXRX_Servos.srcs/sim_1/new/selector_tb.vhd"
-
-# Do not sort compile order
-nosort

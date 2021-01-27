@@ -45,6 +45,7 @@ signal zenb: integer;
 
 begin
 
+--display
 with signal_in select
 seg_out<= not "00111111" when "00000000", --0
           not "00000110" when "00000001", --1

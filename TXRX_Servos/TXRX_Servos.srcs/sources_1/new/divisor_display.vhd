@@ -46,6 +46,7 @@ signal  zenb_int, int_hamarreko, int_ehuneko, int_bateko: integer;
 
 begin
 
+--gradoak bi digitutan adierazi
 zenb_int <= conv_integer(unsigned(zenb));                      
 int_hamarreko <= zenb_int / 10;                                                                  
 int_bateko <= zenb_int - (int_hamarreko*10);

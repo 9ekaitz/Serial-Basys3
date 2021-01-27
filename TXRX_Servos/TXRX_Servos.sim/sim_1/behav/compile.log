@@ -1,4 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ainhize/Documents/Informatika/MAILA2/PBL3/Vivado/Serial_Display/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/selector.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity selector
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ainhize/Documents/Informatika/MAILA2/PBL3/Vivado/Serial_Display/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sim_1/new/selector_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity selector_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ainhize/Documents/Informatika/MAILA2/PBL3/Vivado/Serial_Display/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sources_1/new/PMW_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PWM_controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ainhize/Documents/Informatika/MAILA2/PBL3/Vivado/Serial_Display/Serial-Basys3/TXRX_Servos/TXRX_Servos.srcs/sim_1/new/PMW_Controller_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PMW_Controller_tb
