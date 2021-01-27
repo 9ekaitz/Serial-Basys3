@@ -1,5 +1,5 @@
 # Serial-Basys3
-This is a VHDL proyect to receive and send data from the serial on the Basys 3, process the data and move the respected finger. The data is divided in two parts, the id and the angle, the two off them are sent independentyl one per byte. 
+This is a VHDL proyect to receive and send data from the serial on the Basys 3, process the data and move the respected finger. The data is divided in two parts, the id and the angle, the two off them are sent independently one per byte. 
 
 ![Alt text](/img/Data.png?raw=true "Data")
 
