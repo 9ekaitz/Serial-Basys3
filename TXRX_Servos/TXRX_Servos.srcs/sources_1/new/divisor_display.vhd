@@ -47,10 +47,10 @@ signal  zenb_int, int_hamarreko, int_ehuneko, int_bateko: integer;
 
 begin
 
+--gradua bi digitutako izan daitekeenez bertatik bi digituak jasotzen ditugu
 zenb_int <= conv_integer(unsigned(zenb));                      
-int_hamarreko <= zenb_int / 10;                                
-int_ehuneko <= zenb_int /100;                                  
-int_bateko <= zenb_int - (int_hamarreko*10 + int_ehuneko *100);
+int_hamarreko <= zenb_int / 10;                                                                
+int_bateko <= zenb_int - (int_hamarreko*10);
 
 with int_bateko select
 bateko<="00000000" when 0,
@@ -77,18 +77,5 @@ hamarreko<="00000000" when 0,
            "00001000" when 8,
            "00001001" when 9,
            "00000000" when others;
-        
-with int_ehuneko select
-        ehuneko<="00000000" when 0,
-                 "00000001" when 1,
-                 "00000010" when 2,
-                 "00000011" when 3,
-                 "00000100" when 4,
-                 "00000101" when 5,
-                 "00000110" when 6,
-                 "00000111" when 7,
-                 "00001000" when 8,
-                 "00001001" when 9,
-                 "00000000" when others;
 
 end Behavioral;

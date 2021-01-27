@@ -41,8 +41,6 @@ end display7;
 
 architecture Behavioral of display7 is
 
-signal zenb: integer;
-
 begin
 
 with signal_in select

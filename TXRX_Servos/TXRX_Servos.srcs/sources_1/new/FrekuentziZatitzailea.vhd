@@ -36,22 +36,22 @@ begin
 baud_timer: process (clk)
 begin
     if clk'event and clk = '1' then 
-        if baud_count = 54 then -- 10^8 / (16 * 9600) = 651 cycles    -- 54
-             baud_count <= 0;
+        if baud_count = 54 then -- 10^8 / (16 * 115.200) = 54 cycles   Clk para la comunicación serial  
+             baud_count <= 0;   
              clk_16_x <= '1';
         else
              baud_count <= baud_count + 1;
              clk_16_x <= '0';
         end if;
        
-       if pmw_count > 49 then
+       if pmw_count > 49 then   -- Clk para la señal pwm
             pmw_count <= 0;
             clk_pmw_s <= not clk_pmw_s;
        else
             pmw_count <= pmw_count + 1;
        end if;
        
-       if refresh_count > 50000 then
+       if refresh_count > 50000 then   -- Clk para refrescar el display
             refresh_count <= 0;
             clk_refresh_s <= not clk_refresh_s;
         else
@@ -62,6 +62,7 @@ begin
     
 end process baud_timer;
 
+-- Salidas como output
 en_16_x_baud <= clk_16_x;
 clk_pmw <= clk_pmw_s;
 clk_refresh <= clk_refresh_s;

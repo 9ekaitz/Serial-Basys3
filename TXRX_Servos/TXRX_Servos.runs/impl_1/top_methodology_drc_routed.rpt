@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Tue Jan 26 14:21:14 2021
+| Date         : Wed Jan 27 20:04:20 2021
 | Host         : DESKTOP-6C35MAJ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -1394,337 +1394,337 @@ Related violations: <none>
 
 TIMING-17#273 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/current_reg/C is not reached by a timing clock
+The clock pin DISPLAY/EM/oraingoa_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#274 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[0]/C is not reached by a timing clock
+The clock pin DISPLAY/EM/oraingoa_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#275 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[10]/C is not reached by a timing clock
+The clock pin D_HAND/current_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#276 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[11]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#277 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[12]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#278 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[13]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#279 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[14]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#280 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[15]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#281 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[16]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#282 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[17]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#283 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[18]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#284 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[19]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#285 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[1]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#286 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[20]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#287 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[21]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#288 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[22]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#289 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[23]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#290 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[24]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#291 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[25]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#292 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[26]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#293 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[27]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#294 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[28]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#295 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[29]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#296 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[2]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#297 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[30]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#298 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[31]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#299 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[3]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#300 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[4]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#301 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[5]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#302 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[6]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#303 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[7]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#304 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[8]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#305 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_idle_reg[9]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#306 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[0]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#307 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[10]/C is not reached by a timing clock
+The clock pin D_HAND/kont_idle_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#308 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[11]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#309 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[12]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#310 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[13]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#311 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[14]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#312 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[15]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#313 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[16]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#314 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[17]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#315 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[18]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#316 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[19]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#317 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[1]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#318 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[20]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#319 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[21]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#320 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[22]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#321 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[23]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#322 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[24]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#323 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[25]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#324 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[26]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#325 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[27]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#326 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[28]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#327 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[29]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#328 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[2]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#329 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[30]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#330 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[31]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#331 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[3]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#332 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[4]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#333 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[5]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#334 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[6]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#335 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[7]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#336 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[8]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#337 Warning
 Non-clocked sequential cell  
-The clock pin D_HAND/kont_send_reg[9]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#338 Warning
 Non-clocked sequential cell  
-The clock pin EM/oraingoa_reg[0]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#339 Warning
 Non-clocked sequential cell  
-The clock pin EM/oraingoa_reg[1]/C is not reached by a timing clock
+The clock pin D_HAND/kont_send_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#340 Warning

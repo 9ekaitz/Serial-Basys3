@@ -57,19 +57,19 @@ end process;
 COMB: process (oraingoa)
 begin
     case oraingoa is
-    when bateko=>
+    when bateko=>   -- Estado del primer anodo del display empezando por la derecha
         anodo<="1110";
         katodo<=zenb_bateko;
         hurrengoa<=hamarreko;
-    when hamarreko=>
+    when hamarreko=> -- Estado del segundo anodo del display empezando por la derecha
         anodo<="1101";
         katodo<=zenb_hamarreko;
         hurrengoa<=ehuneko;
-    when ehuneko=>
+    when ehuneko=>  -- Estado del tercer anodo del display empezando por la derecha
          anodo<="1011";
-         katodo<= not "01000000";
+         katodo<= not "01000000"; -- honekin id-a eta gradua banatzeko erdiko marra irudikatzen dugu
          hurrengoa<=id;
-    when id=>
+    when id=>  -- Estado del id, el catodo que está a la izquierda del todo
          anodo<="0111";
          katodo<=zenb_id;
          hurrengoa<=bateko;

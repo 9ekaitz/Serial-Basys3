@@ -43,24 +43,24 @@ end PWM_controller;
 architecture Behavioral of PWM_controller is
 
 type STATE is(IDLE,SEND);
-signal kont_idle, kont_send, angle,aux1, aux2 : Integer:=0;
-signal current, next_state: STATE;
+signal kont_idle, kont_send, angle,aux1, aux2 : Integer:=0; -- Contadores
+signal current, next_state: STATE; -- Estados
 
 begin
 
-angle <= conv_integer(signed(angle_byte));
-aux1 <= 19998 - (500 +16*angle);
-aux2 <= 500 + 16*angle;
+angle <= conv_integer(signed(angle_byte)); 
+aux1 <= 19998 - (500 +16*angle); -- El tiempo que tiene que estar la señal de PWM bajado
+aux2 <= 500 + 16*angle; -- El tiempo que tiene que estar la señal de PWM arriba
 
 SEQ: process (clk_pmw, current)
 begin 
     if clk_pmw'event and clk_pmw = '1' then
       current <= next_state;
        if current = IDLE then     
-           kont_idle <= kont_idle + 1;
+           kont_idle <= kont_idle + 1; -- Se cuenta cuanto tiempo esta la señal bajada
            kont_send <= 0;
        else
-           kont_send <= kont_send + 1;
+           kont_send <= kont_send + 1; -- Se cuenta cuanto tiempo esta la señal arriba
            kont_idle <= 0;
        end if;  
     end if;
@@ -70,16 +70,16 @@ COMB: process (current, kont_idle, kont_send)
 begin
     case current is
     when IDLE =>
-        pmw <= '0';
+        pmw <= '0'; -- Señal PWM 
         if kont_idle >= aux1 then
-           next_state <= SEND;
+           next_state <= SEND; -- Cuando se termine el tiempo que tiene que estar la señal baja pasa a estar subida
         else
            next_state <= current;
         end if;
     when SEND =>
         pmw <= '1';  
         if kont_send >= aux2 then
-           next_state <= IDLE;
+           next_state <= IDLE; -- Cuando se termine el tiempo que tiene que estar la señal arriba pasa a estar abajo
         else
            next_state <= current;
         end if;

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/gorka/Documents/Repostiorios/Serial-Basys3/TXRX_Servos/TXRX_Servos.runs/synth_1'
+HD_PWD='C:/Users/gorka/Downloads/Byte_Hand-1.0/Serial-Basys3-1.0/TXRX_Servos/TXRX_Servos.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

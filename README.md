@@ -17,3 +17,12 @@ NOTE: The coupled routing and the anti-alias filters might limit the data speeds
 The XADC core within the Artix-7 is a dual channel 12-bit analog-to-digital converter capable of operating at 1 MSPS. Either channel can be driven by any of the auxiliary analog input pairs connected to the JXADC header. The XADC core is controlled and accessed from a user design via the Dynamic Reconfiguration Port(DRP). The DRP also provides access to voltage monitors that are present on each of the FPGA's power rails, and a temperature sensor that is internal to the FPGA. For more information on using the XADC core, refer to the Xilinx document titled "7 Series FPGAs and Zynq-7000 All Programmable SoC XADC Dual 12-Bit 1 MSPS Analog-to-Digital Converter."
 
 ![Alt text](/img/Basys3-pinout.png?raw=true "Basys3 Pin-Out")
+
+## Top
+![Alt text](/img/Top.png?raw=true "Top")
+
+## Memoria
+![Alt text](/img/Memoria.png?raw=true "Memoria")
+
+## Display Refresh
+![Alt text](/img/Display.png?raw=true "Refresh")

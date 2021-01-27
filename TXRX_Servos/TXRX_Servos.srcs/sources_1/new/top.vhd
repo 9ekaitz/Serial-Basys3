@@ -74,34 +74,11 @@ component kcuart_rx is
             clk : in std_logic);
 end component;
 
-component display7 is
-    Port ( clk : in STD_LOGIC;
-           signal_in : in STD_LOGIC_VECTOR (7 downto 0);
-           seg_out : out STD_LOGIC_VECTOR (7 downto 0));
-end component;
-
 component PWM_controller is
     Port ( clk : in STD_LOGIC;
            clk_pmw : in STD_LOGIC;
            angle_byte : in STD_LOGIC_VECTOR (7 downto 0);
            pmw : out STD_LOGIC);
-end component;
-
-component EM_display is
-   Port ( clk : in STD_LOGIC;
-          zenb_bateko : in STD_LOGIC_VECTOR (7 downto 0);
-          zenb_hamarreko : in STD_LOGIC_VECTOR (7 downto 0);
-          zenb_id: in STD_LOGIC_VECTOR (7 downto 0);
-          anodo : out STD_LOGIC_VECTOR (3 downto 0);
-          katodo : out STD_LOGIC_VECTOR (7 downto 0));
-end component;
-
-component divisor_display is
-    Port ( clk : in STD_LOGIC;
-           zenb : in STD_LOGIC_VECTOR (7 downto 0);
-           bateko : out STD_LOGIC_VECTOR (7 downto 0);
-           hamarreko : out STD_LOGIC_VECTOR (7 downto 0);
-           ehuneko: out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
 component Data_memoria is
@@ -136,6 +113,14 @@ component selector is
             angle_j : out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
+
+component nagusia_display
+    Port ( clk : in STD_LOGIC;
+           id : in STD_LOGIC_VECTOR (7 downto 0);
+           grado : in STD_LOGIC_VECTOR (7 downto 0);
+           an : out STD_LOGIC_VECTOR (3 downto 0);
+           seg : out STD_LOGIC_VECTOR (7 downto 0));
+end component;
 -- Byte recivido
 signal data: STD_LOGIC_VECTOR (7 downto 0);
 
@@ -147,10 +132,6 @@ signal clk_refresh : STD_LOGIC;
 -- Booleanos
 signal data_strobe: STD_LOGIC;
 signal start_ena : STD_LOGIC;
-
--- Display
-signal data_bateko, data_hamarreko, data_ehuneko : STD_LOGIC_VECTOR (7 downto 0);
-signal zenb_bateko, zenb_hamarreko, zenb_id : STD_LOGIC_VECTOR (7 downto 0);
 
 -- PMW
 signal angle_a, angle_b, angle_c, angle_d, angle_e, angle_f, angle_g, angle_h, angle_i, angle_j: STD_LOGIC_VECTOR (7 downto 0);
@@ -174,32 +155,12 @@ RX: kcuart_rx port map(
                     data_strobe=>data_strobe,
                     en_16_x_baud=>clk_16_x,
                     clk=>clk);
-                              
-CONTROL_Display: divisor_display port map ( clk => clk,
-                                           zenb => angle,
-                                           bateko => data_bateko,
-                                           hamarreko => data_hamarreko,
-                                           ehuneko => data_ehuneko);
-                           
-DISPLAY_D: display7 port map ( clk => clk,
-                               signal_in => data_bateko,
-                               seg_out => zenb_bateko);
-                        
-DISPLAY_C: display7 port map ( clk => clk,
-                               signal_in => data_hamarreko,
-                               seg_out => zenb_hamarreko);
-                        
-DISPLAY_id: display7 port map ( clk => clk,
-                                signal_in => id,
-                                seg_out => zenb_id);
-
-                         
-EM: EM_display port map ( clk => clk_refresh,
-                          zenb_id => zenb_id,
-                          zenb_bateko => zenb_bateko,
-                          zenb_hamarreko => zenb_hamarreko,
-                          anodo => an,
-                          katodo => seg);
+                    
+DISPLAY: nagusia_display port map ( clk=> clk_refresh,
+                                    id => id,
+                                    grado => angle,
+                                    an => an,
+                                    seg => seg);
 
 MEMORIA : Data_memoria port map( clk => clk,
                              ena => start,
