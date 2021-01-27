@@ -84,9 +84,9 @@ end process;
 
 stim_proc: process
 begin
-rst<='1';
+reset<='1';
 wait for 10 ns;
-rst<='0';
+reset<='0';
 id <= "01100100";
 angle <= "00010000";
 wait for 5000 ns;

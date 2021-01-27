@@ -54,7 +54,7 @@ end component;
 
 signal clk,ena,reset,data_receive: std_logic;
 signal led_send,led_angle,led_id,led_idle,led_off: std_logic;
-siganl data_in, angle_out,id_out: std_logic_vector(7 downto 0);
+signal data_in, angle_out,id_out: std_logic_vector(7 downto 0);
 
 begin
 
@@ -80,9 +80,9 @@ end process;
 
 stim_proc: process
 begin
-rst<='1';
+reset<='1';
 wait for 10 ns;
-rst<='0';
+reset<='0';
 ena<= '1';
 wait for 500 ns;
 data_in <= "01100100";
