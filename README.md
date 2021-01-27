@@ -1,5 +1,7 @@
 # Serial-Basys3
-This is a VHDL proyect to receive and send data from the serial on the Basys 3
+This is a VHDL proyect to receive and send data from the serial on the Basys 3, process the data and move the respected finger. The data is divided in two parts, the id and the angle, the two off them are sent independentyl one per byte. 
+
+![Alt text](/img/Data.png?raw=true "Data")
 
 ## Pmod RS232
 
@@ -19,10 +21,13 @@ The XADC core within the Artix-7 is a dual channel 12-bit analog-to-digital conv
 ![Alt text](/img/Basys3-pinout.png?raw=true "Basys3 Pin-Out")
 
 ## Top
+This is the main system chart
 ![Alt text](/img/Top.png?raw=true "Top")
 
 ## Memoria
+This is how it works the data_memoria component, saving the id and angle and checking if the id introduced is correct and it is between 100 and 109 wich is the same as A to J
 ![Alt text](/img/Memoria.png?raw=true "Memoria")
+![Alt text](/img/Mano.png?raw=true "Mano")
 
 ## Display Refresh
 ![Alt text](/img/Display.png?raw=true "Refresh")
